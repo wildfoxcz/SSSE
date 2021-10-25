@@ -8,32 +8,28 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
+    // --- Traits ---
     use Notifiable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name', 'email', 'password',
-    ];
+    // --- Laravel settings ---
+    protected $guarded = ['id'];
 
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
+    // --- Eloquent relationships ---
+    public function role()
+    {
+        return $this->belongsTo(Role::class);
+    }
 
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+    public function branch()
+    {
+        return $this->belongsTo(Branch::class);
+    }
+
+
+
+    // ---
+    public function isAuthorised($requiredRole)
+    {
+        return $this->role->searchInHiearchy($requiredRole);
+    }
 }
