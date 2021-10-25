@@ -21,4 +21,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::prefix('admin/')->name('admin.')->middleware('role:admin')->group(function () {
     Route::get('/home', 'Admin\\HomeController@index')->name('home');
+
+    Route::resource('/posts', 'Admin\\PostController')->names([
+        'index' => 'posts.index',
+        'create' => 'posts.create',
+        'store' => 'posts.store',
+        'edit' => 'posts.edit',
+        'update' => 'posts.update',
+    ]);
 });

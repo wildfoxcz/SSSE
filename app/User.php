@@ -20,9 +20,9 @@ class User extends Authenticatable
         return $this->belongsTo(Role::class);
     }
 
-    public function branch()
+    public function posts()
     {
-        return $this->belongsTo(Branch::class);
+        return $this->hasMany(Post::class);
     }
 
 
