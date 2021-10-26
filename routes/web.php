@@ -20,7 +20,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::prefix('admin/')->name('admin.')->middleware('role:admin')->group(function () {
-    Route::get('/home', 'Admin\\HomeController@index')->name('home');
+    Route::get('/dashboard', 'Admin\\HomeController@index')->name('dashboard');
 
     Route::resource('/posts', 'Admin\\PostController')->names([
         'index' => 'posts.index',
@@ -29,4 +29,13 @@ Route::prefix('admin/')->name('admin.')->middleware('role:admin')->group(functio
         'edit' => 'posts.edit',
         'update' => 'posts.update',
     ]);
+
+    Route::resource('/pages', 'Admin\\PageController')->names([
+        'index' => 'pages.index',
+        'create' => 'pages.create',
+        'store' => 'pages.store',
+        'edit' => 'pages.edit',
+        'update' => 'pages.update',
+    ]);
 });
+
