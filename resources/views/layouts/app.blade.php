@@ -101,7 +101,7 @@
                     <div class="row justify-content-center">
                         <div class="col-md-9 col-lg-7">
                             <h1>{{ $post->title }}</h1>
-                            <p class="big">{{ $post->content }}</p><a class="btn btn-primary" href="academics.html">Číst více</a>
+                            <p class="big">{!! $post->description !!}</p><a class="btn btn-primary" href="academics.html">Číst více</a>
                         </div>
                     </div>
                 </div>
