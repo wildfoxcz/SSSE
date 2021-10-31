@@ -2,85 +2,70 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Field;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Image;
+use App\Field;
 
 class FieldController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        //
+        $fields = Field::all();
+
+        return view('admin.fields.index', compact('fields'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Field  $field
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Field $field)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Field  $field
-     * @return \Illuminate\Http\Response
-     */
     public function edit(Field $field)
     {
-        //
+        return view('admin.fields.edit_or_create', compact('field'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Field  $field
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Field $field)
+
+    public function update(Field $field)
     {
-        //
+        $this->store_or_update($field);
+
+        return redirect()->route('admin.fields.index');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Field  $field
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Field $field)
+    public function create()
     {
-        //
+        return view('admin.fields.edit_or_create');
     }
+
+    public function store()
+    {
+        $field = $this->store_or_update();
+
+        return redirect()->route('admin.fields.index');
+    }
+
+
+    private function store_or_update(Field $field = null)
+    {
+        if(is_null($field))
+            $field = new Field;
+
+        $rules = [
+            'name' => 'required|string',
+            'content' => 'required|string',
+            // @todo 'image' => '',
+
+        ];
+
+        $this->validate(request(), $rules);
+
+        $properties = array_keys($rules);
+        foreach(array_intersect_key(request()->input(), array_flip($properties)) as $property => $value)
+        {
+            $field->$property = $value;
+        }
+
+        $field->save();
+
+        return $field;
+    }
+
 }

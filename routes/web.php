@@ -11,9 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+Route::get('/', 'HomepageController@index');
+
+Route::get('ckeditor', 'CkeditorController@index');
+Route::post('ckeditor/upload', 'CkeditorController@upload')->name('ckeditor.upload');
 
 Auth::routes();
 
@@ -36,6 +39,14 @@ Route::prefix('admin/')->name('admin.')->middleware('role:admin')->group(functio
         'store' => 'pages.store',
         'edit' => 'pages.edit',
         'update' => 'pages.update',
+    ]);
+
+    Route::resource('/fields', 'Admin\\FieldController')->names([
+        'index' => 'fields.index',
+        'create' => 'fields.create',
+        'store' => 'fields.store',
+        'edit' => 'fields.edit',
+        'update' => 'fields.update',
     ]);
 });
 

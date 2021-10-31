@@ -31,7 +31,6 @@ $actionText = ($mode == 'edit' ? 'Upravit' : 'Vytvořit').' článek';
                         </div>
 
                         <div class="card-body">
-                            {{ $errors ?? '' }}
 
                             <div class="form-group">
                                 <label for="inputName">Název článku</label>
@@ -57,14 +56,14 @@ $actionText = ($mode == 'edit' ? 'Upravit' : 'Vytvořit').' článek';
                                 <label for="inputDescription">Celý text</label>
                                 <textarea id="inputDescription" class="ckeditor form-control" rows="4" name="description"
                                 >{{ old('description', $mode == 'edit' ? $post->description : null) }}</textarea>
-                                {{--
+
                                 <script type="text/javascript">
                                     CKEDITOR.replace('description', {
                                         filebrowserUploadUrl: "{{route('ckeditor.upload', ['_token' => csrf_token() ])}}",
                                         filebrowserUploadMethod: 'form'
                                     });
                                 </script>
-                                --}}
+
                             </div>
                             @if ($errors->has("description"))
                                 @foreach ($errors->get("description") as $error)
