@@ -96,16 +96,16 @@
         <div class="swiper-wrapper">
             <!-- Slides-->
             @foreach ($posts as $post)
-            <div class="swiper-slide section-md" style="background-image: url(images/posts/{{ $post->image }})">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-9 col-lg-7">
-                            <h1>{{ $post->title }}</h1>
-                            <p class="big">{!! $post->description !!}</p><a class="btn btn-primary" href="academics.html">Číst více</a>
+                <div class="swiper-slide section-md" style="background-image: url(images/posts/{{ $post->image }})">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-9 col-lg-7">
+                                <h1>{{ $post->title }}</h1>
+                                <p class="big">{!! $post->description !!}</p><a class="btn btn-primary" href="academics.html">Číst více</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
             @endforeach
         </div>
         <!-- Pagination-->
@@ -114,17 +114,12 @@
     <!-- Blurb default-->
     <section class="section-md bg-transparent text-center">
         <div class="container">
-            <div class="text-block text-block-1" data-animate='{"class":"fadeIn"}'>
-                <h5 class="text-primary">Guaranteed Success</h5>
-                <h2>What We Offer</h2>
-                <p class="big">Teachzy offers students the best of education and entertainment opportunities available in the area. We are glad to take care of every student and university entrant.</p>
-            </div>
             <div class="row row-30 justify-content-center">
                 <div class="col-sm-6 col-md-4">
                     <!-- Blurb-->
                     <article class="blurb blurb-2" data-animate='{"class":"fadeInUp"}'>
                         <div class="icon blurb-icon custom-font-online-course"></div>
-                        <div class="blurb-title h4">Online Education</div>
+                        <div class="blurb-title h4">Proč u nás studovat</div>
                         <div class="blurb-text big">Teachzy provides online education services with all learning materials and lectures available to you.</div>
                     </article>
                 </div>
@@ -132,7 +127,7 @@
                     <!-- Blurb-->
                     <article class="blurb blurb-2" data-animate='{"class":"fadeInUp","delay":".15s"}'>
                         <div class="icon blurb-icon custom-font-degree"></div>
-                        <div class="blurb-title h4">Programs &amp; Courses</div>
+                        <div class="blurb-title h4">Naše obory</div>
                         <div class="blurb-text big">We offer a wide range of courses and  programs that encompass lots of knowledge spheres.</div>
                     </article>
                 </div>
@@ -140,7 +135,7 @@
                     <!-- Blurb-->
                     <article class="blurb blurb-2" data-animate='{"class":"fadeInUp","delay":".3s"}'>
                         <div class="icon blurb-icon custom-font-school"></div>
-                        <div class="blurb-title h4">Campus Events</div>
+                        <div class="blurb-title h4">Den otevřených dveří</div>
                         <div class="blurb-text big">Our campus is the hub to a talented and diverse student community that turns opportunities into success.</div>
                     </article>
                 </div>
@@ -151,7 +146,7 @@
     <section class="section-md bg-300 text-center">
         <div class="container">
             <div class="text-block text-block-1" data-animate='{"class":"fadeIn"}'>
-                <h2>Our Featured Courses</h2>
+                <h2>Vyber si obor pro tebe</h2>
                 <p class="big">Our featured courses are selected through a rigorous process and uniquely created for each semester. They cover a lot of topics and are available both online and offline.</p>
             </div>
             <div class="owl-carousel owl-content-1" data-owl="{&quot;dots&quot;:true}" data-loop="false" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4">
@@ -208,14 +203,132 @@
             </div>
         </div>
     </section>
+    <!-- Counters-->
+    <section class="section-lg bg-primary bg-image-wrap context-dark text-center text-md-start">
+        <div class="bg-image-wrap-item bg-image" style="background-image:url(images/image-05-875x705.jpg);"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="pe-xxl-5">
+                        <h2>Co ti nabídneme?</h2>
+                        <p class="big">Teachzy offers quality education helping you build your future career. Here just some of the facts that show why students choose us.</p>
+                        <div class="row row-30 row-lg-55">
+                            <div class="col-6 col-sm-3 col-md-6">
+                                <!-- Blurb side-->
+                                <article class="blurb blurb-side">
+                                    <div class="blurb-item">
+                                        <div class="icon blurb-icon custom-font-graduated"></div>
+                                    </div>
+                                    <div class="blurb-body">
+                                        <div class="blurb-counter-value h2"><span data-counter="">97</span><span class="counter-postfix">%</span>
+                                        </div>
+                                        <div class="blurb-title h4">Graduates</div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-6 col-sm-3 col-md-6">
+                                <!-- Blurb side-->
+                                <article class="blurb blurb-side">
+                                    <div class="blurb-item">
+                                        <div class="icon blurb-icon custom-font-male-teacher"></div>
+                                    </div>
+                                    <div class="blurb-body">
+                                        <div class="blurb-counter-value h2"><span data-counter="">50</span><span class="counter-postfix">+</span>
+                                        </div>
+                                        <div class="blurb-title h4">Certified tutors</div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-6 col-sm-3 col-md-6">
+                                <!-- Blurb side-->
+                                <article class="blurb blurb-side">
+                                    <div class="blurb-item">
+                                        <div class="icon blurb-icon custom-font-student-at-desk"></div>
+                                    </div>
+                                    <div class="blurb-body">
+                                        <div class="blurb-counter-value h2"><span data-counter="">6500</span>
+                                        </div>
+                                        <div class="blurb-title h4">Students</div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-6 col-sm-3 col-md-6">
+                                <!-- Blurb side-->
+                                <article class="blurb blurb-side">
+                                    <div class="blurb-item">
+                                        <div class="icon blurb-icon custom-font-university"></div>
+                                    </div>
+                                    <div class="blurb-body">
+                                        <div class="blurb-counter-value h2"><span data-counter="">10</span>
+                                        </div>
+                                        <div class="blurb-title h4">Campuses</div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials-->
+    <section class="section-md bg-300 text-center">
+        <div class="container">
+            <div class="text-block text-block-1" data-animate='{"class":"fadeIn"}'>
+                <h2>Co o nás říkají?</h2>
+                <p class="big">Want to know more about our university? The feedback submitted by our students is an effective way to show how beneficial the studying at Teachzy university can be.</p>
+            </div>
+            <div class="slick-person-container">
+                <div class="slick-slider slick-person-img slider-nav" data-slick='{"slidesToShow":3,"arrows":false,"asNavFor":".slider-for","focusOnSelect":true,"centerMode":true,"centerPadding":"0px"}'>
+                    <div class="slick-content"><img src="images/person-11-135x135.jpg" alt="" width="135" height="135"/>
+                    </div>
+                    <div class="slick-content"><img src="images/person-07-135x135.jpg" alt="" width="135" height="135"/>
+                    </div>
+                    <div class="slick-content"><img src="images/person-10-135x135.jpg" alt="" width="135" height="135"/>
+                    </div>
+                    <div class="slick-content"><img src="images/person-08-135x135.jpg" alt="" width="135" height="135"/>
+                    </div>
+                </div>
+                <div class="slick-slider slick-person-content slider-for" data-slick='{"arrows":true,"asNavFor":".slider-nav","autoplay":true,"autoplaySpeed":5000,"fade":true}'>
+                    <div class="slick-content">
+                        <!-- Quote-->
+                        <blockquote class="quote quote-simple">
+                            <q class="quote-text">My overall experience in Teachzy was amazing. The best part is to get to know people from a lot of different places, learn about different cultures and make friends for life!</q>
+                            <cite class="quote-cite h6">Peter Fletcher</cite>
+                            <div class="quote-meta">Student</div>
+                        </blockquote>
+                    </div>
+                    <div class="slick-content">
+                        <!-- Quote-->
+                        <blockquote class="quote quote-simple">
+                            <q class="quote-text">This university was an exceptional and international experience for me. It did not only advance my studies and knowledge but even gave me the chance to make friends across the globe.</q>
+                            <cite class="quote-cite h6">Jenny Wilson</cite>
+                            <div class="quote-meta">Student</div>
+                        </blockquote>
+                    </div>
+                    <div class="slick-content">
+                        <!-- Quote-->
+                        <blockquote class="quote quote-simple">
+                            <q class="quote-text">I made friends from countries all over the world. That’s really amazing! And Teachzy is just like a quiet oasis in the crowded city, it’s really pleasant to study and live here.</q>
+                            <cite class="quote-cite h6">John Adams</cite>
+                            <div class="quote-meta">Student</div>
+                        </blockquote>
+                    </div>
+                    <div class="slick-content">
+                        <!-- Quote-->
+                        <blockquote class="quote quote-simple">
+                            <q class="quote-text">I've been working at Teachzy for over 20 years. As a tutor I love interacting with students and share my knowledge. Here you can definitely make connections for life!</q>
+                            <cite class="quote-cite h6">Esther Howard</cite>
+                            <div class="quote-meta">Professor</div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Person side-->
     <section class="section-md bg-transparent text-center">
         <div class="container">
-            <div class="text-block text-block-1" data-animate='{"class":"fadeIn"}'>
-                <h5 class="text-primary">People Behind Our Success</h5>
-                <h2>Our Tutors</h2>
-                <p class="big">We employ highly experienced and qualified teachers who set the ground for all our programs and courses. They are aimed to help you achieve more on your path to success.</p>
-            </div>
             <div class="row row-30 row-lg-60">
                 <div class="col-xs-6 col-lg-4">
                     <!-- Person side-->
@@ -304,292 +417,11 @@
             </div>
         </div>
     </section>
-    <!-- Counters-->
-    <section class="section-lg bg-primary bg-image-wrap context-dark text-center text-md-start">
-        <div class="bg-image-wrap-item bg-image" style="background-image:url(images/image-05-875x705.jpg);"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="pe-xxl-5">
-                        <h2>Why Choose Us</h2>
-                        <p class="big">Teachzy offers quality education helping you build your future career. Here just some of the facts that show why students choose us.</p>
-                        <div class="row row-30 row-lg-55">
-                            <div class="col-6 col-sm-3 col-md-6">
-                                <!-- Blurb side-->
-                                <article class="blurb blurb-side">
-                                    <div class="blurb-item">
-                                        <div class="icon blurb-icon custom-font-graduated"></div>
-                                    </div>
-                                    <div class="blurb-body">
-                                        <div class="blurb-counter-value h2"><span data-counter="">97</span><span class="counter-postfix">%</span>
-                                        </div>
-                                        <div class="blurb-title h4">Graduates</div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="col-6 col-sm-3 col-md-6">
-                                <!-- Blurb side-->
-                                <article class="blurb blurb-side">
-                                    <div class="blurb-item">
-                                        <div class="icon blurb-icon custom-font-male-teacher"></div>
-                                    </div>
-                                    <div class="blurb-body">
-                                        <div class="blurb-counter-value h2"><span data-counter="">50</span><span class="counter-postfix">+</span>
-                                        </div>
-                                        <div class="blurb-title h4">Certified tutors</div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="col-6 col-sm-3 col-md-6">
-                                <!-- Blurb side-->
-                                <article class="blurb blurb-side">
-                                    <div class="blurb-item">
-                                        <div class="icon blurb-icon custom-font-student-at-desk"></div>
-                                    </div>
-                                    <div class="blurb-body">
-                                        <div class="blurb-counter-value h2"><span data-counter="">6500</span>
-                                        </div>
-                                        <div class="blurb-title h4">Students</div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="col-6 col-sm-3 col-md-6">
-                                <!-- Blurb side-->
-                                <article class="blurb blurb-side">
-                                    <div class="blurb-item">
-                                        <div class="icon blurb-icon custom-font-university"></div>
-                                    </div>
-                                    <div class="blurb-body">
-                                        <div class="blurb-counter-value h2"><span data-counter="">10</span>
-                                        </div>
-                                        <div class="blurb-title h4">Campuses</div>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Post event-->
-    <section class="section-md bg-transparent text-center">
-        <div class="container">
-            <div class="text-block text-block-1" data-animate='{"class":"fadeIn"}'>
-                <h5 class="text-primary">Don’t miss anything</h5>
-                <h2>Upcoming Events</h2>
-                <p class="big">Every week, we organize a variety of events for our students and undergraduates. From webinars to creative events, there are activities that are always worth your attention.</p>
-            </div>
-            <div class="row row-30 justify-content-center">
-                <div class="col-xs-8 col-sm-6 col-md-4">
-                    <!-- Post event-->
-                    <div class="post post-event" data-animate='{"class":"fadeInUp"}'><a class="post-media" href="single-post.html"><img class="post-img" src="images/image-06-370x240.jpg" alt="" width="370" height="240"/>
-                            <div class="post-date">
-                                <div class="post-day">19</div>
-                                <div class="post-month">Sep</div>
-                            </div></a>
-                        <div class="post-heading h4">
-                            <div class="post-title"><a href="single-post.html">Creative Day</a></div>
-                            <div class="post-price">$20</div>
-                        </div>
-                        <div class="post-meta post-meta-vertical big">
-                            <div class="post-meta-item">
-                                <div class="post-meta-icon custom-font-clock"></div>
-                                <div class="post-time">12:00 am - 2:00 pm</div>
-                            </div>
-                            <div class="post-meta-item">
-                                <div class="post-meta-icon custom-font-pin"></div>
-                                <div class="post-location">Cambridge, MA 02138, USA</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-8 col-sm-6 col-md-4">
-                    <!-- Post event-->
-                    <div class="post post-event" data-animate='{"class":"fadeInUp","delay":".15s"}'><a class="post-media" href="single-post.html"><img class="post-img" src="images/image-07-370x240.jpg" alt="" width="370" height="240"/>
-                            <div class="post-date">
-                                <div class="post-day">21</div>
-                                <div class="post-month">Sep</div>
-                            </div></a>
-                        <div class="post-heading h4">
-                            <div class="post-title"><a href="single-post.html">Poetry Event</a></div>
-                            <div class="post-price">$15</div>
-                        </div>
-                        <div class="post-meta post-meta-vertical big">
-                            <div class="post-meta-item">
-                                <div class="post-meta-icon custom-font-clock"></div>
-                                <div class="post-time">11:00 am - 1:00 pm</div>
-                            </div>
-                            <div class="post-meta-item">
-                                <div class="post-meta-icon custom-font-pin"></div>
-                                <div class="post-location">233 Main St. New York United States</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-8 col-sm-6 col-md-4">
-                    <!-- Post event-->
-                    <div class="post post-event" data-animate='{"class":"fadeInUp","delay":".3s"}'><a class="post-media" href="single-post.html"><img class="post-img" src="images/image-08-370x240.jpg" alt="" width="370" height="240"/>
-                            <div class="post-date">
-                                <div class="post-day">26</div>
-                                <div class="post-month">Sep</div>
-                            </div></a>
-                        <div class="post-heading h4">
-                            <div class="post-title"><a href="single-post.html">Undergraduate Day</a></div>
-                            <div class="post-price">Free</div>
-                        </div>
-                        <div class="post-meta post-meta-vertical big">
-                            <div class="post-meta-item">
-                                <div class="post-meta-icon custom-font-clock"></div>
-                                <div class="post-time">1:00 pm - 11:59 pm</div>
-                            </div>
-                            <div class="post-meta-item">
-                                <div class="post-meta-icon custom-font-pin"></div>
-                                <div class="post-location">Cambridge, MA 02138, USA</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Testimonials-->
-    <section class="section-md bg-300 text-center">
-        <div class="container">
-            <div class="text-block text-block-1" data-animate='{"class":"fadeIn"}'>
-                <h2>Testimonials</h2>
-                <p class="big">Want to know more about our university? The feedback submitted by our students is an effective way to show how beneficial the studying at Teachzy university can be.</p>
-            </div>
-            <div class="slick-person-container">
-                <div class="slick-slider slick-person-img slider-nav" data-slick='{"slidesToShow":3,"arrows":false,"asNavFor":".slider-for","focusOnSelect":true,"centerMode":true,"centerPadding":"0px"}'>
-                    <div class="slick-content"><img src="images/person-11-135x135.jpg" alt="" width="135" height="135"/>
-                    </div>
-                    <div class="slick-content"><img src="images/person-07-135x135.jpg" alt="" width="135" height="135"/>
-                    </div>
-                    <div class="slick-content"><img src="images/person-10-135x135.jpg" alt="" width="135" height="135"/>
-                    </div>
-                    <div class="slick-content"><img src="images/person-08-135x135.jpg" alt="" width="135" height="135"/>
-                    </div>
-                </div>
-                <div class="slick-slider slick-person-content slider-for" data-slick='{"arrows":true,"asNavFor":".slider-nav","autoplay":true,"autoplaySpeed":5000,"fade":true}'>
-                    <div class="slick-content">
-                        <!-- Quote-->
-                        <blockquote class="quote quote-simple">
-                            <q class="quote-text">My overall experience in Teachzy was amazing. The best part is to get to know people from a lot of different places, learn about different cultures and make friends for life!</q>
-                            <cite class="quote-cite h6">Peter Fletcher</cite>
-                            <div class="quote-meta">Student</div>
-                        </blockquote>
-                    </div>
-                    <div class="slick-content">
-                        <!-- Quote-->
-                        <blockquote class="quote quote-simple">
-                            <q class="quote-text">This university was an exceptional and international experience for me. It did not only advance my studies and knowledge but even gave me the chance to make friends across the globe.</q>
-                            <cite class="quote-cite h6">Jenny Wilson</cite>
-                            <div class="quote-meta">Student</div>
-                        </blockquote>
-                    </div>
-                    <div class="slick-content">
-                        <!-- Quote-->
-                        <blockquote class="quote quote-simple">
-                            <q class="quote-text">I made friends from countries all over the world. That’s really amazing! And Teachzy is just like a quiet oasis in the crowded city, it’s really pleasant to study and live here.</q>
-                            <cite class="quote-cite h6">John Adams</cite>
-                            <div class="quote-meta">Student</div>
-                        </blockquote>
-                    </div>
-                    <div class="slick-content">
-                        <!-- Quote-->
-                        <blockquote class="quote quote-simple">
-                            <q class="quote-text">I've been working at Teachzy for over 20 years. As a tutor I love interacting with students and share my knowledge. Here you can definitely make connections for life!</q>
-                            <cite class="quote-cite h6">Esther Howard</cite>
-                            <div class="quote-meta">Professor</div>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Blog-->
-    <section class="section-md bg-transparent">
-        <div class="container">
-            <div class="text-block text-block-1 text-center" data-animate='{"class":"fadeIn"}'>
-                <h5 class="text-primary">Latest news</h5>
-                <h2>From our blog</h2>
-                <p class="big">We regularly share news and updates in our university’s blog. The articles we publish vary from announcing new events and courses to providing useful information to our students.</p>
-            </div>
-            <div class="row row-30 justify-content-center">
-                <div class="col-xs-10 col-sm-6">
-                    <!-- Post-->
-                    <div class="post" data-animate='{"class":"fadeIn"}'><a class="post-media" href="single-post.html"><img class="post-img" src="images/image-09-570x380.jpg" alt="" width="570" height="380"/></a>
-                        <div class="post-meta">
-                            <div class="post-meta-item">
-                                <div class="post-meta-icon custom-font-calendar"></div>
-                                <div class="post-date">April 23, 2021</div>
-                            </div>
-                            <div class="post-meta-item">
-                                <div class="post-meta-icon custom-font-message-circle"></div>
-                                <div class="post-comment">3 comment(s)</div>
-                            </div>
-                        </div>
-                        <div class="post-title h6"><a href="single-post.html">Liberal Arts Colleges Rankings</a></div>
-                        <div class="post-text">The National Liberal Arts Colleges, including schools like Wellesley College and Bowdoin College, emphasize undergraduate education and award at least half of their degrees in the liberal arts fields of study.</div>
-                    </div>
-                </div>
-                <div class="col-xs-10 col-sm-6">
-                    <h5 class="text-primary">Popular</h5>
-                    <!-- Post-->
-                    <div class="post" data-animate='{"class":"fadeInUp"}'>
-                        <div class="post-meta">
-                            <div class="post-meta-item">
-                                <div class="post-meta-icon custom-font-calendar"></div>
-                                <div class="post-date">April 23, 2021</div>
-                            </div>
-                            <div class="post-meta-item">
-                                <div class="post-meta-icon custom-font-message-circle"></div>
-                                <div class="post-comment">3 comment(s)</div>
-                            </div>
-                        </div>
-                        <div class="post-title h6"><a href="single-post.html">Studying in the United States</a></div>
-                        <div class="post-text">International students increasingly want to come to the United States for college or graduate school. Use our tips, rankings, and more to help you find the best school for you.</div>
-                    </div>
-                    <!-- Post-->
-                    <div class="post" data-animate='{"class":"fadeInUp"}'>
-                        <div class="post-meta">
-                            <div class="post-meta-item">
-                                <div class="post-meta-icon custom-font-calendar"></div>
-                                <div class="post-date">April 23, 2021</div>
-                            </div>
-                            <div class="post-meta-item">
-                                <div class="post-meta-icon custom-font-message-circle"></div>
-                                <div class="post-comment">3 comment(s)</div>
-                            </div>
-                        </div>
-                        <div class="post-title h6"><a href="single-post.html">5 Ways to Pay for Community College</a></div>
-                        <div class="post-text">Most community college students qualify for need-based aid, experts say. Many community colleges offer promise programs, which offer tuition-free awards to eligible students - mainly to students with Pell grant eligibility.</div>
-                    </div>
-                    <!-- Post-->
-                    <div class="post" data-animate='{"class":"fadeInUp"}'>
-                        <div class="post-meta">
-                            <div class="post-meta-item">
-                                <div class="post-meta-icon custom-font-calendar"></div>
-                                <div class="post-date">April 23, 2021</div>
-                            </div>
-                            <div class="post-meta-item">
-                                <div class="post-meta-icon custom-font-message-circle"></div>
-                                <div class="post-comment">3 comment(s)</div>
-                            </div>
-                        </div>
-                        <div class="post-title h6"><a href="single-post.html">Consider MBA Programs That Offer Summer Prep</a></div>
-                        <div class="post-text">New MBA students can brush up on finance and accounting before classes begin. Summer preparatory programs offered through schools allow students to get a head start on making connections and building skills.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- Call to action-->
     <section class="section-sm bg-primary context-dark text-center">
         <div class="container">
             <div class="group-16 d-lg-flex flex-wrap justify-content-between align-items-center">
-                <h3>Prepare Your Application Letter for Admission</h3><a class="btn btn-primary" href="#">Apply</a>
+                <h3>Chceš být jedním z nás?</h3><a class="btn btn-primary" href="#">Klikni sem!</a>
             </div>
         </div>
     </section>
@@ -599,7 +431,7 @@
             <div class="container">
                 <div class="row row-30">
                     <div class="col-xs-6 col-md-3">
-                        <h5 class="footer-title">Contacts</h5>
+                        <h5 class="footer-title">Kontakt</h5>
                         <ul class="list list-icons">
                             <li class="list-item">
                                 <div class="list-icon custom-font-pin"></div><a class="link link-inherit" href="#">Brooklyn, NY 10036, 16-2 United States</a>
@@ -613,7 +445,7 @@
                         </ul>
                     </div>
                     <div class="col-6 col-md-3">
-                        <h5 class="footer-title">Socials</h5>
+                        <h5 class="footer-title">Pro uchazeče</h5>
                         <ul class="list list-sm">
                             <li class="list-item"><a class="link link-inherit" href="#">Facebook</a></li>
                             <li class="list-item"><a class="link link-inherit" href="#">Pinterest</a></li>
@@ -624,7 +456,7 @@
                         </ul>
                     </div>
                     <div class="col-6 col-md-3">
-                        <h5 class="footer-title">About Us</h5>
+                        <h5 class="footer-title">Pro studenty</h5>
                         <ul class="list list-sm">
                             <li class="list-item"><a class="link link-inherit" href="#">Our Mission</a></li>
                             <li class="list-item"><a class="link link-inherit" href="#">Graduate Admission</a></li>
@@ -636,7 +468,7 @@
                         </ul>
                     </div>
                     <div class="col-6 col-md-3">
-                        <h5 class="footer-title">Teachers</h5>
+                        <h5 class="footer-title">O škole</h5>
                         <ul class="list list-sm">
                             <li class="list-item"><a class="link link-inherit" href="team-member.html">Olivia Thomas</a></li>
                             <li class="list-item"><a class="link link-inherit" href="team-member.html">Alice Bohm</a></li>
@@ -669,40 +501,40 @@
 </div>
 </body>
 </html>
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            @if(auth()->user()->isAuthorised('admin'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('admin.home') }}">Administrace</a>
-                                </li>
-                            @endif
+@guest
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+    </li>
+    @if (Route::has('register'))
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+        </li>
+    @endif
+@else
+    @if(auth()->user()->isAuthorised('admin'))
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('admin.home') }}">Administrace</a>
+        </li>
+    @endif
 
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
+    <li class="nav-item dropdown">
+        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+            {{ Auth::user()->name }} <span class="caret"></span>
+        </a>
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{ route('logout') }}"
+               onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
+                {{ __('Logout') }}
+            </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+        </div>
+    </li>
+@endguest
 
-            @yield('content')
+@yield('content')
 
