@@ -120,7 +120,8 @@
                     <article class="blurb blurb-2" data-animate='{"class":"fadeInUp"}'>
                         <div class="icon blurb-icon custom-font-online-course"></div>
                         <div class="blurb-title h4">Proč u nás studovat</div>
-                        <div class="blurb-text big">Teachzy provides online education services with all learning materials and lectures available to you.</div>
+                        <div class="blurb-text big">Hledáš obory díky kterým budeš mít budoucnost vždycky zajištěnou? Objev školu, která tě do života vybaví tolik potřebnou praxí. Navíc můžeš ušetřit na certifikacích.
+                        </div>
                     </article>
                 </div>
                 <div class="col-sm-6 col-md-4">
@@ -128,7 +129,7 @@
                     <article class="blurb blurb-2" data-animate='{"class":"fadeInUp","delay":".15s"}'>
                         <div class="icon blurb-icon custom-font-degree"></div>
                         <div class="blurb-title h4">Naše obory</div>
-                        <div class="blurb-text big">We offer a wide range of courses and  programs that encompass lots of knowledge spheres.</div>
+                        <div class="blurb-text big">Ať už máš šikovné ruce nebo hlavu, máme pro tebe 9 bezvadných oborů. Z toho už se dá vybrat!</div>
                     </article>
                 </div>
                 <div class="col-sm-6 col-md-4">
@@ -136,7 +137,7 @@
                     <article class="blurb blurb-2" data-animate='{"class":"fadeInUp","delay":".3s"}'>
                         <div class="icon blurb-icon custom-font-school"></div>
                         <div class="blurb-title h4">Den otevřených dveří</div>
-                        <div class="blurb-text big">Our campus is the hub to a talented and diverse student community that turns opportunities into success.</div>
+                        <div class="blurb-text big">Víš, že první zámečníci byli vlastně kováři, kteří vytvářeli z kovu brnění nebo podkovy? A že existuje živočišná elektřina? Víme, že slovo elektron je ze staré řečtiny a rytířskou helmu umíme vyrobit i my, tak se na nás přijď podívat</div>
                     </article>
                 </div>
             </div>

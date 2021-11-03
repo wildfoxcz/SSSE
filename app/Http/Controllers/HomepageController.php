@@ -12,3 +12,4 @@ class HomepageController extends Controller
         return view('layouts.app', compact('posts'));
     }
 }
+ja
