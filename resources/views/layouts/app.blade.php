@@ -101,7 +101,7 @@
                         <div class="row justify-content-center">
                             <div class="col-md-9 col-lg-7">
                                 <h1>{{ $post->title }}</h1>
-                                <p class="big">{!! $post->description !!}</p><a class="btn btn-primary" href="academics.html">Číst více</a>
+                                <p class="big">{!! $post->short_desc !!}</p><a class="btn btn-primary" href="#">Číst více</a>
                             </div>
                         </div>
                     </div>
@@ -158,46 +158,6 @@
                     <div class="price-box-body">
                         <div class="price-box-title h6"><a href="#">Academic English</a></div>
                         <div class="price-box-text">Steven Carter</div>
-                    </div>
-                </div>
-                <!-- Price box-->
-                <div class="price-box">
-                    <div class="price-box-media"><img class="price-box-img" src="images/image-02-270x220.jpg" alt="" width="270" height="220"/>
-                        <div class="price-box-tag">$40</div>
-                    </div>
-                    <div class="price-box-body">
-                        <div class="price-box-title h6"><a href="#">Online Marketing</a></div>
-                        <div class="price-box-text">Ronald Richards</div>
-                    </div>
-                </div>
-                <!-- Price box-->
-                <div class="price-box">
-                    <div class="price-box-media"><img class="price-box-img" src="images/image-03-270x220.jpg" alt="" width="270" height="220"/>
-                        <div class="price-box-tag">$30</div>
-                    </div>
-                    <div class="price-box-body">
-                        <div class="price-box-title h6"><a href="#">HR Management</a></div>
-                        <div class="price-box-text">Ralph Edwards</div>
-                    </div>
-                </div>
-                <!-- Price box-->
-                <div class="price-box">
-                    <div class="price-box-media"><img class="price-box-img" src="images/image-04-270x220.jpg" alt="" width="270" height="220"/>
-                        <div class="price-box-tag">$30</div>
-                    </div>
-                    <div class="price-box-body">
-                        <div class="price-box-title h6"><a href="#">Financial Analytics</a></div>
-                        <div class="price-box-text">Emma Smith</div>
-                    </div>
-                </div>
-                <!-- Price box-->
-                <div class="price-box">
-                    <div class="price-box-media"><img class="price-box-img" src="images/image-18-270x220.jpg" alt="" width="270" height="220"/>
-                        <div class="price-box-tag">$30</div>
-                    </div>
-                    <div class="price-box-body">
-                        <div class="price-box-title h6"><a href="#">Web Technology</a></div>
-                        <div class="price-box-text">Kathryn Murphy</div>
                     </div>
                 </div>
             </div>
