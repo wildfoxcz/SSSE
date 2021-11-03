@@ -20,7 +20,7 @@ Route::post('ckeditor/upload', 'CkeditorController@upload')->name('ckeditor.uplo
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomepageController@index')->name('home');
 
 Route::prefix('admin/')->name('admin.')->middleware('role:admin')->group(function () {
     Route::get('/dashboard', 'Admin\\HomeController@index')->name('dashboard');

@@ -36,6 +36,13 @@ $actionText = ($mode == 'edit' ? 'Upravit' : 'Vytvořit').' článek';
                                 <label for="inputName">Název článku</label>
                                 <input type="text" id="inputName" class="form-control" name="title" value="{{ old('title', $mode == 'edit' ? $post->title : null) }}">
                             </div>
+
+                            <div class="form-group">
+                                <label for="inputName">Krátky popis</label>
+                                <textarea id="inputDescription" class="form-control" rows="4" name="short_desc"
+                                >{{ old('short_desc', $mode == 'edit' ? $post->short_desc : null) }}</textarea>
+                            </div>
+
                             @if ($errors->has("title"))
                                 @foreach ($errors->get("title") as $error)
                                     <div class="errorMessage"> <!-- @todo find class for errors in adminLTE -->
