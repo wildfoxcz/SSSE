@@ -117,7 +117,6 @@ class FieldController extends Controller
         {
             $field->$property = $value;
         }
-        dd($field);
         $field->save();
         return $field;
     }
