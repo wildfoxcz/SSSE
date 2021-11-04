@@ -15,6 +15,8 @@
 
 Route::get('/', 'HomepageController@index');
 
+Route::get('/obory', 'FieldController@show');
+
 Route::get('ckeditor', 'CkeditorController@index');
 Route::post('ckeditor/upload', 'CkeditorController@upload')->name('ckeditor.upload');
 
