@@ -34,6 +34,7 @@ $actionText = ($mode == 'edit' ? 'Upravit' : 'Vytvořit').' obor';
                         </div>
 
                         <div class="card-body">
+                            {{ $errors ?? '' }}
                             <div class="form-group">
                                 <label for="inputName">Název oboru</label>
                                 <input type="text" id="inputName" class="form-control" name="name" value="{{ old('name', $mode == 'edit' ? $field->name : null) }}">
