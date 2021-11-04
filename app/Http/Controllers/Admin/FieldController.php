@@ -58,9 +58,9 @@ class FieldController extends Controller
             'where_can' => 'required|string',
             'learn_plan' => 'required|string',
             'what_can' => 'required|string',
-            'image_1' => 'image|mimes:jpeg,png,jpg,gif',
-            'image_2' => 'image|mimes:jpeg,png,jpg,gif',
-            'image_3' => 'image|mimes:jpeg,png,jpg,gif',
+            'image_1' => 'image',
+            'image_2' => 'image',
+            'image_3' => 'image',
             'join_url' => 'required|string',
             'about_url' => 'required|string',
             'basic_info' => 'required|string',
@@ -117,8 +117,10 @@ class FieldController extends Controller
         {
             $field->$property = $value;
         }
-        $field->save();
 
+
+        $field->save();
+        dd($field);
         return $field;
     }
 

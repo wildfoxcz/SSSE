@@ -49,6 +49,7 @@ class PostController extends Controller
 
         $rules = [
             'title' => 'required|string',
+            'short_desc' => 'required|string',
             'description' => 'required|string',
             // @todo 'image' => '',
 
