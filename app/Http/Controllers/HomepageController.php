@@ -9,7 +9,7 @@ class HomepageController extends Controller
     public function index()
     {
         $posts = Post::orderBy('created_at', 'ASC')->paginate(5);
-        return view('layouts.web', compact('posts'));
+        return view('homepage', compact('posts'));
     }
 }
 
