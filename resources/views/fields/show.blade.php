@@ -43,9 +43,9 @@
                     </p>
                 </div>
                 <div align="center" class="col-md-6 bg-primary context-dark spacing-box"  style="padding-top: 230px;">
-                    <a class="btn btn-outline" href="{{ $field->join_url }}">Přihláška ke studiu (PDF)</a><br>
-                    <a class="btn btn-outline" href="{{ $field->about_url }}">Informace o příjmacím řízení</a><br>
-                    <a class="btn btn-outline" href="{{ $field->vsp }}">Školní vzdělávací Program</a>
+                    <a class="btn btn-outline" href="{{ url('images/fields/'.$field->join_url) }}">Přihláška ke studiu (PDF)</a><br>
+                    <a class="btn btn-outline" href="{{ url('images/fields/'.$field->about_url) }}">Informace o příjmacím řízení</a><br>
+                    <a class="btn btn-outline" href="{{ url('images/fields/'.$field->vsp) }}">Školní vzdělávací Program</a>
                 </div>
                 <div class="col-md-6 bg-secondary context-dark spacing-box" >
                     <h2>Co budu umět?</h2>

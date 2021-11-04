@@ -62,16 +62,16 @@
             <p class="big">Our featured courses are selected through a rigorous process and uniquely created for each semester. They cover a lot of topics and are available both online and offline.</p>
         </div>
         <div class="owl-carousel owl-content-1" data-owl="{&quot;dots&quot;:true}" data-loop="false" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4">
-            <!-- Price box-->
-            <div class="price-box">
-                <div class="price-box-media"><img class="price-box-img" src="images/image-01-270x220.jpg" alt="" width="270" height="220"/>
-                    <div class="price-box-tag">$20</div>
+            @foreach($fields as $field)
+                <!-- Price box-->
+                <div class="price-box">
+                    <div class="price-box-media"><img class="price-box-img" src="{{ url('images/fields/'.$field->image_1) }}" alt="" width="270" height="220"/>
+                    </div>
+                    <div class="price-box-body">
+                        <div class="price-box-title h6"><a href="{{ route('fields.show', $field) }}">{{ $field->name }}</a></div>
+                    </div>
                 </div>
-                <div class="price-box-body">
-                    <div class="price-box-title h6"><a href="#">Academic English</a></div>
-                    <div class="price-box-text">Steven Carter</div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>
