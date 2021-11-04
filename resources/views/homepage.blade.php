@@ -1,4 +1,4 @@
-@extends('layouts.web')
+@extends('layouts.web', ['hiddenNav' => true])
 
 @section('content')
 <!-- Swiper default-->
