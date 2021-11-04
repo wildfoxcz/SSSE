@@ -64,6 +64,7 @@ class FieldController extends Controller
             'join_url' => 'required|string',
             'about_url' => 'required|string',
             'basic_info' => 'required|string',
+            'vsp' => 'required|string',
             // @todo 'image' => '',
 
         ];

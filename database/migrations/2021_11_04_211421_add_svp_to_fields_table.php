@@ -26,7 +26,7 @@ class AddSvpToFieldsTable extends Migration
     public function down()
     {
         Schema::table('fields', function (Blueprint $table) {
-
+        //
         });
     }
 }
