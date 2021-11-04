@@ -185,6 +185,11 @@ $actionText = ($mode == 'edit' ? 'Upravit' : 'Vytvořit').' obor';
                                 <input type="text" id="inputName" class="form-control" name="about_url" value="{{ old('about_url', $mode == 'edit' ? $field->about_url : null) }}">
                             </div>
 
+                            <div class="form-group">
+                                <label for="inputName">VŠP</label>
+                                <input type="text" id="vsp" class="form-control" name="vsp" value="{{ old('vsp', $mode == 'edit' ? $field->vsp : null) }}">
+                            </div>
+
                         </div>
                 </div>
                     <!-- /.card -->
