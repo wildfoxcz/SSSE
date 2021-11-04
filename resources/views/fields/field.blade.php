@@ -95,25 +95,18 @@
             </div>
         </nav>
     </header>
-    <section class="section breadcrumb-section">
-        <div class="container">
-            <!-- Breadcrumb-->
-            <div class="breadcrumb">
-                <div class="breadcrumb-inner">
-                    <div class="breadcrumb-item"><a class="breadcrumb-link" href="index.html">Home</a></div>
-                    <div class="breadcrumb-item"><span class="breadcrumb-text breadcrumb-active">Academics</span></div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- About us-->
     <section class="section-md bg-300 bg-layer text-center">
         <div class="bg-layer-item bg-white" style="bottom: 30%"></div>
         <div class="container">
             <div class="text-block text-block-1">
-                <h5 class="text-primary">Academic program</h5>
-                <h2>Our curriculum</h2>
-                <p class="big">Massa, et porttitor cras sed ultrices ullamcorper mauris semper iaculis. Ornare suscipit purus nulla pharetra velit, leo in. Amet nulla nunc vitae viverra pellentesque in eget. Mi ut sit ultrices sed.</p>
+                <h2>Mechanik seřizovač</h2>
+                <p class="big">
+                    Je třeba si to přiznat – k přírodě máš vztah. Možná tě vždy fascinovala zvířata, možná to jsou silné zemědělské stroje. Nebo máte hospodářství, ke kterému tě to vždycky táhlo. A proto hledáš obor, ke kterému si vytvoříš stejný vztah.
+                </p>
+                <p class="big">
+                    Agropodnikání je klasický zemědělský obor. Učí opravdu široký záběr, takže zvládneš klasické zemědělství, ať je to chov zvířat, nebo pěstování rostlin, ale i nové nekonvenční formy zemědělství - ekologické farmy a další. Pokud chceš mít opravdu široký rozhled a zvládnout zemědělství jako celkem, moderní agroturistiku i řízení traktoru, je pro tebe Agropodnikání jako dělané.
+                </p>
             </div>
             <div class="row g-0">
                 <div class="col-4"><img src="images/image-10-390x390.jpg" alt="" width="390" height="390"/>
@@ -130,9 +123,20 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-10 col-xxl-9">
-                    <h5 class="text-primary">Resources</h5>
-                    <h2>Our admission</h2>
-                    <p class="big">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.</p><a class="btn btn-primary" href="#">Learn more</a>
+                    <h2>Proč studovat tento obor?</h2>
+                    <p class="big">
+                    <h5>JISTOTA UPLATNĚNÍ</h5>
+                    Jíst se bude vždycky. A stejně tak tady bude vždycky půda, kterou bude potřeba obdělávat. A ty budeš vědět, jak na to, takže o uplatnění se bát opravdu nemusíš.
+
+                    <h5>TRADIČNÍ I MODERNÍ ZEMĚDĚLSTVÍ</h5>
+                    Ovládneš klasické zemědělské postupy i moderní formy zemědělství – vše od traktoru až po agroturistiku. Do praxe tak budeš připravený/á, ať už se rozhodneš dělat cokoli.
+
+                    <h5>ŠIROKÝ PŘEHLED</h5>
+                    Naučíš se vše o práci s rostlinami, zvířaty i opravdu silnými stroji. Svůj široký záběr můžeš uplatnit v praxi, nebo třeba při studiu na vysoké škole. Záleží jen na tobě.
+
+                    <h5>AGRONOM, EKOLOG, NEBO TŘEBA LABORANT</h5>
+                    Možností budeš mít hodně - můžeš pracovat na farmě, pečovat o přírodu, sedět na úřadu nebo třeba zkoumat potraviny v laboratoři. Taky ale zvládneš prodávat stroje nebo krmiva. Je to tvá volba.
+                    </p>
                 </div>
             </div>
         </div>
@@ -141,163 +145,172 @@
     <section class="section-md bg-transparent text-center text-md-start">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 bg-primary context-dark spacing-box">
-                    <h2>Performing<br>& Fine Arts</h2>
-                    <p class="big">Cum urna rhoncus, eget tellus. Odio gravida metus fringilla scelerisque magna scelerisque convallis gravida. Eu enim dictumst nunc cras nisi, mattis. Morbi amet nunc semper egestas tellus tortor amet. Eget nunc sed.</p><a class="btn btn-outline" href="#">Learn more</a>
+                <div class="col-md-6 bg-primary context-dark spacing-box" >
+                    <h4>Základní informace</h4>
+                    <p class="big">
+                    <h6>KÓD OBORU</h6>
+                    41-41-M/01
+
+                    <h6>ŠKOLNÍ A VZDĚLÁVACÍ PROGRAM</h6>
+                    Agropodnikání
+
+                    <h6>DOSAŽENÉ VZDĚLÁNÍ</h6>
+                    Střední vzdělání s maturitou
+
+                    <h6>ZAKONČENÍ STUDIA</h6>
+                    Maturitní zkouška
+
+                    <h6>DÉLKA STUDIA</h6>
+                    Čtyřleté studium
+
+                    <h6>PŘIJÍMACÍ ZKOUŠKY</h6>
+                    Jednotné přijímací zkoušky z českého jazyka a matematiky. Kompletní informace o přijímacích zkouškách zde.
+
+                    <h6>POČET PŘIJÍMANÝCH ŽÁKŮ</h6>
+                    30
                 </div>
-                <div class="col-md-6 bg-image" style="background-image:url(images/image-13-586x545.jpg);"></div>
-                <div class="col-md-6 bg-image" style="background-image:url(images/image-14-586x545.jpg);"></div>
-                <div class="col-md-6 bg-secondary context-dark spacing-box">
-                    <h2>Athletics</h2>
-                    <p class="big">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit.</p><a class="btn btn-outline" href="#">Learn more</a>
+                <div align="center" class="col-md-6 bg-primary context-dark spacing-box"  style="padding-top: 230px;">
+                    <a class="btn btn-outline" href="#">Přihláška ke studiu (PDF)</a><br>
+                    <a class="btn btn-outline" href="#">Informace o příjmacím řízení</a><br>
+                    <a class="btn btn-outline" href="#">Školní vzdělávací Program</a>
+                </div>
+                <div class="col-md-6 bg-secondary context-dark spacing-box" >
+                    <h2>Co budu umět?</h2>
+                    <p class="big">
+                    <ul id="whaaat">
+                        <li>- Ovládat traktor a speciální stroje - secí stroj, počítačem řízený pluh, sazecí stroj, vyorávače, brány, válce atd.</li><br>
+                        <li>- Ovládat všechny stroje, které se používají při chovu zvířat - automatické linky krmení, automatické ovládání stájového mikroklima, moderní dojící stroje atd.</li><br>
+                        <li>- Organizovat sklizeň, posoudit zdravotní stav a růstové fáze, setí, hnojařský plán, plán osevních postupů - od pšenice, přes brambory až po mák</li><br>
+                        <li>- Posoudit zdravotní stav zvířat, kvalitu krmné dávky, a celkovou péči - skot, prasata, drůbež, chov koní se učí taky, okrajově chov ryb</li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="col-md-6 bg-third context-dark spacing-box" style="padding-top: 48px">
+                    <h2 id="kde">Kde se uplatním?</h2>
+                    <p class="big">
+                    <p>
+                        O uplatnění rozhodně nemusíš mít strach – zvládneš toho opravdu hodně. Můžeš být třeba zootechnikem, který se stará o zvířata, agronomem, který řídí pěstování plodin, nebo mechanizátorem u velkých strojů, který vede vlastní tým techniků.</p>
+                    <p>
+                        Můžeš pracovat v potravinářství, nebo se stát prodejcem krmiv, zemědělské techniky či chemie. Staň se ekologem nebo prostě pracuj v kanceláři, na úřadu, nebo přímo v terénu. A samozřejmě můžeš pokračovat na vysokou, třeba na Mendelu do Brna, nebo na Palackého univerzitu v Olomouci.
+                    </p>
+                    </p>
                 </div>
             </div>
         </div>
     </section>
     <!-- Call to action-->
-    <section class="section-md bg-image text-center" style="background-image:url(images/bg-pattern-1.jpg);">
+    <section class="section-md bg-300 text-center">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-10 col-xxl-9">
-                    <h5 class="text-primary">How to Apply to Teachzy</h5>
-                    <h2>Your Way to Higher Education</h2>
-                    <p class="big">Feugiat aliquam quis ultrices tristique nulla est at suspendisse. Pretium nulla lectus lobortis enim nibh purus. Maecenas senectus fusce mus sapien nulla. Diam pulvinar augue nisl, quam sit venenatis vitae. Augue rutrum venenatis, vitae lectus at. Posuere quisque molestie condimentum tristique.</p><a class="btn btn-primary" href="#">Learn more</a>
+                    <h2>Učební plán</h2>
+                    <p class="big">
+                        Zde přijde tabulka
+                    </p>
                 </div>
             </div>
         </div>
     </section>
     <!-- Blog-->
-    <section class="section-md bg-transparent">
+    <section class="section-md  text-center">
         <div class="container">
-            <div class="text-block text-block-1 text-center">
-                <h5 class="text-primary">Latest news</h5>
-                <h2>Popular Articles</h2>
-                <p class="big">Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem.</p>
+            <div class="text-block data-animate='{"class":"fadeIn"}'>
+            <h2>Partneři</h2>
+            <p class="big">Spolupracujeme s těmi nejlepšími</p>
+        </div>
+        <div class="owl-carousel owl-content-1" data-owl="{&quot;dots&quot;:true}" data-loop="false" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4">
+            <!-- Price box-->
+            <div class="price-box">
+                <div class="price-box-media"><img class="price-box-img" src="images/image-01-270x220.jpg" alt="" width="270" height="220"/>
+                </div>
             </div>
-            <div class="row row-30 justify-content-center">
-                <div class="col-xs-9 col-sm-6 col-md-4">
-                    <!-- Post-->
-                    <div class="post post-responsive post-responsive-1"><a class="post-media" href="single-post.html"><img class="post-img" src="images/image-15-370x255.jpg" alt="" width="370" height="255"/></a>
-                        <div class="post-meta">
-                            <div class="post-meta-item">
-                                <div class="post-meta-icon custom-font-calendar"></div>
-                                <div class="post-date">April 23, 2021</div>
-                            </div>
-                            <div class="post-meta-item">
-                                <div class="post-meta-icon custom-font-message-circle"></div>
-                                <div class="post-comment">3 comment(s)</div>
-                            </div>
-                        </div>
-                        <div class="post-title h6"><a href="single-post.html">Liberal Arts Colleges Rankings</a></div>
-                    </div>
+            <!-- Price box-->
+            <div class="price-box">
+                <div class="price-box-media"><img class="price-box-img" src="images/image-02-270x220.jpg" alt="" width="270" height="220"/>
                 </div>
-                <div class="col-xs-9 col-sm-6 col-md-4">
-                    <!-- Post-->
-                    <div class="post post-responsive post-responsive-1"><a class="post-media" href="single-post.html"><img class="post-img" src="images/image-16-370x255.jpg" alt="" width="370" height="255"/></a>
-                        <div class="post-meta">
-                            <div class="post-meta-item">
-                                <div class="post-meta-icon custom-font-calendar"></div>
-                                <div class="post-date">April 23, 2021</div>
-                            </div>
-                            <div class="post-meta-item">
-                                <div class="post-meta-icon custom-font-message-circle"></div>
-                                <div class="post-comment">3 comment(s)</div>
-                            </div>
-                        </div>
-                        <div class="post-title h6"><a href="single-post.html">Studying in the United States</a></div>
-                    </div>
+            </div>
+            <!-- Price box-->
+            <div class="price-box">
+                <div class="price-box-media"><img class="price-box-img" src="images/image-03-270x220.jpg" alt="" width="270" height="220"/>
                 </div>
-                <div class="col-xs-9 col-sm-6 col-md-4">
-                    <!-- Post-->
-                    <div class="post post-responsive post-responsive-1"><a class="post-media" href="single-post.html"><img class="post-img" src="images/image-17-370x255.jpg" alt="" width="370" height="255"/></a>
-                        <div class="post-meta">
-                            <div class="post-meta-item">
-                                <div class="post-meta-icon custom-font-calendar"></div>
-                                <div class="post-date">April 23, 2021</div>
-                            </div>
-                            <div class="post-meta-item">
-                                <div class="post-meta-icon custom-font-message-circle"></div>
-                                <div class="post-comment">3 comment(s)</div>
-                            </div>
-                        </div>
-                        <div class="post-title h6"><a href="single-post.html">5 Ways to Pay for Community College</a></div>
-                    </div>
+            </div>
+            <!-- Price box-->
+            <div class="price-box">
+                <div class="price-box-media"><img class="price-box-img" src="images/image-04-270x220.jpg" alt="" width="270" height="220"/>
+                </div>
+            </div>
+            <!-- Price box-->
+            <div class="price-box">
+                <div class="price-box-media"><img class="price-box-img" src="images/image-18-270x220.jpg" alt="" width="270" height="220"/>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Call to action-->
-    <section class="section-sm bg-primary context-dark text-center">
+</div>
+</section>
+<!-- Footer default-->
+<footer class="section footer">
+    <div class="footer-top bg-300">
         <div class="container">
-            <div class="group-16 d-lg-flex flex-wrap justify-content-between align-items-center">
-                <h3>Prepare Your Application Letter for Admission</h3><a class="btn btn-primary" href="#">Apply</a>
-            </div>
-        </div>
-    </section>
-    <!-- Footer default-->
-    <footer class="section footer">
-        <div class="footer-top bg-300">
-            <div class="container">
-                <div class="row row-30">
-                    <div class="col-xs-6 col-md-3">
-                        <h5 class="footer-title">Contacts</h5>
-                        <ul class="list list-icons">
-                            <li class="list-item">
-                                <div class="list-icon custom-font-pin"></div><a class="link link-inherit" href="#">Brooklyn, NY 10036, 16-2 United States</a>
-                            </li>
-                            <li class="list-item">
-                                <div class="list-icon custom-font-email"></div><a class="link link-inherit" href="mailto:#">info@demolink.org</a>
-                            </li>
-                            <li class="list-item">
-                                <div class="list-icon custom-font-phone"></div><span><span>Call Us: </span><a class="link link-inherit" href="tel:#">1-800-123-1234</a></span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <h5 class="footer-title">Socials</h5>
-                        <ul class="list list-sm">
-                            <li class="list-item"><a class="link link-inherit" href="#">Facebook</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">Pinterest</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">LinkedIn</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">Instagram</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">Twitter</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">YouTube</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <h5 class="footer-title">About Us</h5>
-                        <ul class="list list-sm">
-                            <li class="list-item"><a class="link link-inherit" href="#">Our Mission</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">Graduate Admission</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">Our Vision</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">Our Values</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">About Us</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="academics.html">Academics</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">Degree Programs</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <h5 class="footer-title">Teachers</h5>
-                        <ul class="list list-sm">
-                            <li class="list-item"><a class="link link-inherit" href="team-member.html">Olivia Thomas</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="team-member.html">Alice Bohm</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="team-member.html">Max Turner</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="team-member.html">Jane Smith</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="team-member.html">John Stevens</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="team-member.html">Martha Stevens</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="team-member.html">Connor Walker</a></li>
-                        </ul>
-                    </div>
+            <div class="row row-30">
+                <div class="col-xs-6 col-md-3">
+                    <h5 class="footer-title">Contacts</h5>
+                    <ul class="list list-icons">
+                        <li class="list-item">
+                            <div class="list-icon custom-font-pin"></div><a class="link link-inherit" href="#">Brooklyn, NY 10036, 16-2 United States</a>
+                        </li>
+                        <li class="list-item">
+                            <div class="list-icon custom-font-email"></div><a class="link link-inherit" href="mailto:#">info@demolink.org</a>
+                        </li>
+                        <li class="list-item">
+                            <div class="list-icon custom-font-phone"></div><span><span>Call Us: </span><a class="link link-inherit" href="tel:#">1-800-123-1234</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5 class="footer-title">Socials</h5>
+                    <ul class="list list-sm">
+                        <li class="list-item"><a class="link link-inherit" href="#">Facebook</a></li>
+                        <li class="list-item"><a class="link link-inherit" href="#">Pinterest</a></li>
+                        <li class="list-item"><a class="link link-inherit" href="#">LinkedIn</a></li>
+                        <li class="list-item"><a class="link link-inherit" href="#">Instagram</a></li>
+                        <li class="list-item"><a class="link link-inherit" href="#">Twitter</a></li>
+                        <li class="list-item"><a class="link link-inherit" href="#">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5 class="footer-title">About Us</h5>
+                    <ul class="list list-sm">
+                        <li class="list-item"><a class="link link-inherit" href="#">Our Mission</a></li>
+                        <li class="list-item"><a class="link link-inherit" href="#">Graduate Admission</a></li>
+                        <li class="list-item"><a class="link link-inherit" href="#">Our Vision</a></li>
+                        <li class="list-item"><a class="link link-inherit" href="#">Our Values</a></li>
+                        <li class="list-item"><a class="link link-inherit" href="#">About Us</a></li>
+                        <li class="list-item"><a class="link link-inherit" href="academics.html">Academics</a></li>
+                        <li class="list-item"><a class="link link-inherit" href="#">Degree Programs</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h5 class="footer-title">Teachers</h5>
+                    <ul class="list list-sm">
+                        <li class="list-item"><a class="link link-inherit" href="team-member.html">Olivia Thomas</a></li>
+                        <li class="list-item"><a class="link link-inherit" href="team-member.html">Alice Bohm</a></li>
+                        <li class="list-item"><a class="link link-inherit" href="team-member.html">Max Turner</a></li>
+                        <li class="list-item"><a class="link link-inherit" href="team-member.html">Jane Smith</a></li>
+                        <li class="list-item"><a class="link link-inherit" href="team-member.html">John Stevens</a></li>
+                        <li class="list-item"><a class="link link-inherit" href="team-member.html">Martha Stevens</a></li>
+                        <li class="list-item"><a class="link link-inherit" href="team-member.html">Connor Walker</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom bg-700 context-dark text-center">
-            <div class="container">
-                <!-- Copyright-->
-                <p class="rights"><span>&copy; 2021&nbsp;</span><span>Teachzy</span><span>. All rights reserved.&nbsp;</span><a class="link link-inherit" href="privacy-policy.html">Privacy Policy</a></p>
-            </div>
+    </div>
+    <div class="footer-bottom bg-700 context-dark text-center">
+        <div class="container">
+            <!-- Copyright-->
+            <p class="rights"><span>&copy; 2021&nbsp;</span><span>Teachzy</span><span>. All rights reserved.&nbsp;</span><a class="link link-inherit" href="privacy-policy.html">Privacy Policy</a></p>
         </div>
-    </footer>
+    </div>
+</footer>
 </div>
 <!-- Preloader-->
 <div class="preloader">
