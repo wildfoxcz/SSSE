@@ -6,9 +6,8 @@ use App\Field;
 
 class FieldController extends Controller
 {
-    public function show()//show(Field $field)
+    public function show(Field $field)
     {
-        $field = Field::first();
         return view('fields.show', compact('field'));
     }
 }

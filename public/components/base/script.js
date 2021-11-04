@@ -5,7 +5,7 @@ let components = {};
 
 components.customFont = {
 	selector: '[class*="custom-font-"]',
-	styles: './components/custom-font/custom-font.css'
+	styles: '/components/custom-font/custom-font.css'
 };
 
 components.fontMontserrat = {
@@ -29,144 +29,144 @@ components.pageReveal = {
 
 components.currentDevice = {
 	selector: 'html',
-	script: './components/current-device/current-device.min.js'
+	script: '/components/current-device/current-device.min.js'
 };
 
 components.blurb = {
 	selector: '.blurb',
-	styles: './components/blurb/blurb.css'
+	styles: '/components/blurb/blurb.css'
 };
 
 components.box = {
 	selector: '.box',
-	styles: './components/box/box.css'
+	styles: '/components/box/box.css'
 };
 
 components.breadcrumb = {
 	selector: '.breadcrumb',
-	styles: './components/breadcrumb/breadcrumb.css'
+	styles: '/components/breadcrumb/breadcrumb.css'
 };
 
 components.button = {
 	selector: '.btn',
-	styles: './components/button/button.css'
+	styles: '/components/button/button.css'
 };
 
 components.footer = {
 	selector: 'footer',
-	styles: './components/footer/footer.css'
+	styles: '/components/footer/footer.css'
 };
 
 components.grid = {
 	selector: '.container, .container-fluid, .row, [class*="col-"]',
-	styles: './components/grid/grid.css'
+	styles: '/components/grid/grid.css'
 };
 
 components.icon = {
 	selector: '.icon',
-	styles: './components/icon/icon.css'
+	styles: '/components/icon/icon.css'
 };
 
 components.image = {
 	selector: '.image',
-	styles: './components/image/image.css'
+	styles: '/components/image/image.css'
 };
 
 components.input = {
 	selector: '.form-group, .input-group, .form-check, .custom-control, .form-control',
-	styles: './components/input/input.css'
+	styles: '/components/input/input.css'
 };
 
 components.link = {
 	selector: '.link',
-	styles: './components/link/link.css'
+	styles: '/components/link/link.css'
 };
 
 components.list = {
 	selector: '.list',
-	styles: './components/list/list.css'
+	styles: '/components/list/list.css'
 };
 
 components.logo = {
 	selector: '.logo',
-	styles: './components/logo/logo.css'
+	styles: '/components/logo/logo.css'
 };
 
 components.person = {
 	selector: '.person',
-	styles: './components/person/person.css'
+	styles: '/components/person/person.css'
 };
 
 components.post = {
 	selector: '.post',
-	styles: './components/post/post.css'
+	styles: '/components/post/post.css'
 };
 
 components.postMeta = {
 	selector: '.post-meta',
-	styles: './components/post-meta/post-meta.css'
+	styles: '/components/post-meta/post-meta.css'
 };
 
 components.preloader = {
 	selector: '.preloader',
-	styles: './components/preloader/preloader.css'
+	styles: '/components/preloader/preloader.css'
 };
 
 components.priceBox = {
 	selector: '.price-box',
-	styles: './components/price-box/price-box.css'
+	styles: '/components/price-box/price-box.css'
 };
 
 components.quote = {
 	selector: '.quote',
-	styles: './components/quote/quote.css'
+	styles: '/components/quote/quote.css'
 };
 
 components.rdForm = {
 	selector: '.rd-form',
-	styles: './components/rd-form/rd-form.css'
+	styles: '/components/rd-form/rd-form.css'
 };
 
 components.section = {
 	selector: 'section',
-	styles: './components/section/section.css'
+	styles: '/components/section/section.css'
 };
 
 components.social = {
 	selector: '.social',
-	styles: './components/social/social.css'
+	styles: '/components/social/social.css'
 };
 
 components.snackbar = {
 	selector: '.snackbar',
-	styles: './components/snackbar/snackbar.css'
+	styles: '/components/snackbar/snackbar.css'
 };
 
 components.termList = {
 	selector: '.term-list',
-	styles: './components/term-list/term-list.css'
+	styles: '/components/term-list/term-list.css'
 };
 
 components.textBlock = {
 	selector: '.text-block',
-	styles: './components/text-block/text-block.css'
+	styles: '/components/text-block/text-block.css'
 };
 
 components.thumbnail = {
 	selector: '.thumbnail',
-	styles: './components/thumbnail/thumbnail.css'
+	styles: '/components/thumbnail/thumbnail.css'
 };
 
 components.widget = {
 	selector: '.widget',
-	styles: './components/widget/widget.css'
+	styles: '/components/widget/widget.css'
 };
 
 // Script components
 components.animate = {
 	selector: '[data-animate]',
-	styles: './components/animate/animate.css',
-	script: './components/current-device/current-device.min.js',
+	styles: '/components/animate/animate.css',
+	script: '/components/current-device/current-device.min.js',
 	init: function ( nodes ) {
 		if ( window.xMode || device.macos() ) {
 			nodes.forEach( function ( node ) {
@@ -203,10 +203,10 @@ components.animate = {
 
 components.counter = {
 	selector: '[data-counter]',
-	styles: './components/counter/counter.css',
+	styles: '/components/counter/counter.css',
 	script: [
-		'./components/util/util.min.js',
-		'./components/counter/counter.min.js',
+		'/components/util/util.min.js',
+		'/components/counter/counter.min.js',
 	],
 	init: function ( nodes ) {
 		let observer = new IntersectionObserver( function ( entries ) {
@@ -242,11 +242,11 @@ components.counter = {
 
 components.countdown = {
 	selector: '[ data-countdown ]',
-	styles: './components/countdown/countdown.css',
+	styles: '/components/countdown/countdown.css',
 	script: [
-		'./components/util/util.min.js',
-		'./components/progress-circle/progress-circle.min.js',
-		'./components/countdown/countdown.min.js'
+		'/components/util/util.min.js',
+		'/components/progress-circle/progress-circle.min.js',
+		'/components/countdown/countdown.min.js'
 	],
 	init: function ( nodes ) {
 		nodes.forEach( function ( node ) {
@@ -260,11 +260,11 @@ components.countdown = {
 
 components.lightgallery = {
 	selector: '[data-lightgallery]',
-	styles: './components/lightgallery/lightgallery.css',
+	styles: '/components/lightgallery/lightgallery.css',
 	script: [
-		'./components/jquery/jquery.min.js',
-		'./components/lightgallery/lightgallery.min.js',
-		'./components/util/util.min.js'
+		'/components/jquery/jquery.min.js',
+		'/components/lightgallery/lightgallery.min.js',
+		'/components/util/util.min.js'
 	],
 	init: function ( nodes ) {
 		if ( !window.xMode ) {
@@ -296,10 +296,10 @@ components.lightgallery = {
 
 components.multiswitch = {
 	selector: '[data-multi-switch]',
-	styles: './components/multiswitch/multiswitch.css',
+	styles: '/components/multiswitch/multiswitch.css',
 	script: [
-		'./components/current-device/current-device.min.js',
-		'./components/multiswitch/multiswitch.min.js'
+		'/components/current-device/current-device.min.js',
+		'/components/multiswitch/multiswitch.min.js'
 	],
 	dependencies: 'rdNavbar',
 	init: function ( nodes ) {
@@ -323,13 +323,13 @@ components.multiswitch = {
 components.owlCarousel = {
 	selector: '.owl-carousel',
 	styles: [
-		'./components/owl-carousel/owl.carousel.css',
-		'./components/custom-font/custom-font.css'
+		'/components/owl-carousel/owl.carousel.css',
+		'/components/custom-font/custom-font.css'
 	],
 	script: [
-		'./components/jquery/jquery.min.js',
-		'./components/owl-carousel/owl.carousel.min.js',
-		'./components/util/util.min.js'
+		'/components/jquery/jquery.min.js',
+		'/components/owl-carousel/owl.carousel.min.js',
+		'/components/util/util.min.js'
 	],
 	init: function ( nodes ) {
 		nodes.forEach( function ( node ) {
@@ -386,10 +386,10 @@ components.owlCarousel = {
 
 components.regula = {
 	selector: '[data-constraints]',
-	styles: './components/regula/regula.css',
+	styles: '/components/regula/regula.css',
 	script: [
-		'./components/jquery/jquery.min.js',
-		'./components/regula/regula.min.js'
+		'/components/jquery/jquery.min.js',
+		'/components/regula/regula.min.js'
 	],
 	init: function ( nodes ) {
 		let elements = $( nodes );
@@ -460,12 +460,12 @@ components.regula = {
 components.rdMailform = {
 	selector: '.rd-mailform',
 	styles: [
-		'./components/rd-mailform/rd-mailform.css',
-		'./components/font-awesome/font-awesome.css'
+		'/components/rd-mailform/rd-mailform.css',
+		'/components/font-awesome/font-awesome.css'
 	],
 	script: [
-		'./components/jquery/jquery.min.js',
-		'./components/rd-mailform/rd-mailform.min.js',
+		'/components/jquery/jquery.min.js',
+		'/components/rd-mailform/rd-mailform.min.js',
 	],
 	init: function ( nodes ) {
 		let i, j, k,
@@ -751,13 +751,13 @@ components.rdMailform = {
 components.rdNavbar = {
 	selector: '.rd-navbar',
 	styles: [
-		'./components/rd-navbar/rd-navbar.css'
+		'/components/rd-navbar/rd-navbar.css'
 	],
 	script: [
-		'./components/jquery/jquery.min.js',
-		'./components/util/util.min.js',
-		'./components/current-device/current-device.min.js',
-		'./components/rd-navbar/rd-navbar.min.js'
+		'/components/jquery/jquery.min.js',
+		'/components/util/util.min.js',
+		'/components/current-device/current-device.min.js',
+		'/components/rd-navbar/rd-navbar.min.js'
 	],
 	dependencies: 'currentDevice',
 	init: function ( nodes ) {
@@ -850,8 +850,8 @@ components.rdNavbar = {
 
 components.rdSearch = {
 	selector: '[data-rd-search]',
-	styles: './components/rd-search/rd-search.css',
-	script: './components/rd-search/rd-search.min.js',
+	styles: '/components/rd-search/rd-search.css',
+	script: '/components/rd-search/rd-search.min.js',
 	init: function ( nodes ) {
 		nodes.forEach( function ( node ) {
 			console.log( URLSearchParams );
@@ -867,10 +867,10 @@ components.rdSearch = {
 
 components.slick = {
 	selector: '.slick-slider',
-	styles: './components/slick/slick.css',
+	styles: '/components/slick/slick.css',
 	script: [
-		'./components/jquery/jquery.min.js',
-		'./components/slick/slick.min.js'
+		'/components/jquery/jquery.min.js',
+		'/components/slick/slick.min.js'
 	],
 	init: function ( nodes ) {
 		nodes.forEach( function ( node ) {
@@ -895,11 +895,11 @@ components.slick = {
 
 components.swiper = {
 	selector: '[data-swiper]',
-	styles: './components/swiper/swiper.css',
+	styles: '/components/swiper/swiper.css',
 	script: [
-		'./components/jquery/jquery.min.js',
-		'./components/swiper/swiper.min.js',
-		'./components/util/util.min.js'
+		'/components/jquery/jquery.min.js',
+		'/components/swiper/swiper.min.js',
+		'/components/util/util.min.js'
 	],
 	init: function ( nodes ) {
 		nodes.forEach( function ( node ) {
@@ -940,10 +940,10 @@ components.swiper = {
 components.toTop = {
 	selector: 'html',
 	styles: [
-		'./components/to-top/to-top.css',
-		'./components/font-awesome/font-awesome.css',
+		'/components/to-top/to-top.css',
+		'/components/font-awesome/font-awesome.css',
 	],
-	script: './components/jquery/jquery.min.js',
+	script: '/components/jquery/jquery.min.js',
 	init: function () {
 		if ( !window.xMode ) {
 			let node = document.createElement( 'div' );
