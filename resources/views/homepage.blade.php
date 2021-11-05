@@ -209,11 +209,13 @@
             </div>
             <div class="col-xs-6 col-lg-4">
                 <!-- Person side-->
-                Facebook
+                <h6>Sledujte nás na Facebooku</h6><br>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsssebrno&tabs=timeline&width=370&height=390&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=349918385790465" width="350" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
             <div class="col-xs-6 col-lg-4">
                 <!-- Person side-->
-                Youtube
+                <h6>Sledujte nás na YouTube</h6><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EYcnUCEqxYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
