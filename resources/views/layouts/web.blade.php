@@ -29,45 +29,45 @@
                 <div class="navbar-spacer"></div>
                 <div class="navbar-cell navbar-sidebar">
                     <ul class="navbar-navigation rd-navbar-nav">
-                        <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="tutors.html">UCHAZEČI</a>
+                        <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="#">UCHAZEČI</a>
                             <ul class="navbar-navigation-dropdown rd-navbar-dropdown">
                                 <li class="navbar-navigation-back">
                                     <button class="navbar-navigation-back-btn">Zpět</button>
                                 </li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Proč u nás studovat?</a></li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Naše obory</a></li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Příjmací řízení</a></li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Ubytování a stravování</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="#">Proč u nás studovat?</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="#">Naše obory</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="#">Příjmací řízení</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="#">Ubytování a stravování</a></li>
                             </ul>
                         </li>
-                        <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="tutors.html">STUDENTI</a>
+                        <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="#">STUDENTI</a>
                             <ul class="navbar-navigation-dropdown rd-navbar-dropdown">
                                 <li class="navbar-navigation-back">
                                     <button class="navbar-navigation-back-btn">Zpět</button>
                                 </li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Edookit</a></li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Studijní oddělení</a></li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Konzultační hodiny</a></li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Organizace školního roku</a></li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Studijní materiály</a></li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Ubytování a stravování</a></li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Poradenské pracoviště</a></li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Školní projekty</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="https://sssebrno-login.edookit.net/">Edookit</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="{{ url('stranky/studijni-oddeleni') }}">Studijní oddělení</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="{{ url('stranky/konzultacni-hodiny-ucitelu') }}">Konzultační hodiny</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="{{ url('stranky/skolni-rad') }}">Organizace školního roku</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="#">Studijní materiály</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="#">Ubytování a stravování</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="#">Poradenské pracoviště</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="#">Školní projekty</a></li>
                             </ul>
                         </li>
-                        <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="tutors.html">O ŠKOLE</a>
+                        <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="#">O ŠKOLE</a>
                             <ul class="navbar-navigation-dropdown rd-navbar-dropdown">
                                 <li class="navbar-navigation-back">
                                     <button class="navbar-navigation-back-btn">Zpět</button>
                                 </li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Historie a současnost</a>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Školská rada</a>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Fotogalerie</a>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Svářečská škola</a>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Vzdělávaní dospělých</a>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Ubytovna - hotel</a>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Projekty</a>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Pronájmy</a>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="#">Historie a současnost</a>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="#">Školská rada</a>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="#">Fotogalerie</a>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="#">Svářečská škola</a>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="#">Vzdělávaní dospělých</a>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="#">Ubytovna - hotel</a>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="#">Projekty</a>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="#">Pronájmy</a>
                                 </li>
                             </ul>
                         </li>
@@ -76,9 +76,9 @@
                                 <li class="navbar-navigation-back">
                                     <button class="navbar-navigation-back-btn">Zpět</button>
                                 </li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="single-post.html">Novinky</a>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="single-post.html">Úřední deska</a>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="single-post.html">Volná místa</a>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="#">Novinky</a>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="#">Úřední deska</a>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="#">Volná místa</a>
                                 </li>
                             </ul>
                         </li>
@@ -87,9 +87,9 @@
                                 <li class="navbar-navigation-back">
                                     <button class="navbar-navigation-back-btn">Zpět</button>
                                 </li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="gallery.html">Maturnitní zkoušky</a>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="#">Maturnitní zkoušky</a>
                                 </li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="404.html">Závěrečné zkoušky</a>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="#">Závěrečné zkoušky</a>
                                 </li>
                             </ul>
                         </li>
@@ -133,10 +133,10 @@
                     <div class="col-6 col-md-3">
                         <h5 class="footer-title">Studenti</h5>
                         <ul class="list list-sm">
-                            <li class="list-item"><a class="link link-inherit" href="#">Edookit</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">Studijní oddělení</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">Konzultační hodiny</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">Organizace školního roku</a></li>
+                            <li class="list-item"><a class="link link-inherit" href="https://sssebrno-login.edookit.net/">Edookit</a></li>
+                            <li class="list-item"><a class="link link-inherit" href="{{ url('stranky/studijni-oddeleni') }}">Studijní oddělení</a></li>
+                            <li class="list-item"><a class="link link-inherit" href="{{ url('stranky/konzultacni-hodiny-ucitelu') }}">Konzultační hodiny</a></li>
+                            <li class="list-item"><a class="link link-inherit" href="{{ url('stranky/skolni-rad') }}">Organizace školního roku</a></li>
                             <li class="list-item"><a class="link link-inherit" href="#">Studijní materiály</a></li>
                             <li class="list-item"><a class="link link-inherit" href="#">Ubytování a stravování</a></li>
                             <li class="list-item"><a class="link link-inherit" href="#">Poradenské pracoviště</a></li>
