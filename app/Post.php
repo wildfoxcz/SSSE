@@ -21,6 +21,7 @@ class Post extends Model
     }
 
     // ---
+
     /**
      * Return the sluggable configuration array for this model.
      *
@@ -33,6 +34,17 @@ class Post extends Model
                 'source' => 'title'
             ]
         ];
+    }
+
+    public function getShortDescriptionAttribute()
+    {
+        $result = "";
+        $input = strip_tags($this->description);
+        if(strlen( $input) > 50) {
+            $result = explode( "\n", wordwrap( $input, 50));
+            $result = $result[0] . '...';
+        }
+        return $result;
     }
 
     /**

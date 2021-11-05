@@ -63,7 +63,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="blog.html">AKTUALITY</a>
+                        <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="{{ route('posts.index') }}">AKTUALITY</a>
                             <ul class="navbar-navigation-dropdown rd-navbar-dropdown">
                                 <li class="navbar-navigation-back">
                                     <button class="navbar-navigation-back-btn">Back</button>

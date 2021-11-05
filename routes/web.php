@@ -16,6 +16,7 @@
 Route::get('/', 'HomepageController@index');
 
 Route::get('/obory/{field}', 'FieldController@show')->name('fields.show');
+Route::get('/aktuality', 'PostController@index')->name('posts.index');
 Route::get('/aktuality/{post}', 'PostController@show')->name('posts.show');
 Route::get('/stranky/{pages}', 'PageController@show')->name('pages.show');
 

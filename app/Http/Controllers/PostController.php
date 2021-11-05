@@ -12,5 +12,11 @@ class PostController extends Controller
         $otherPosts = Post::where('id', '!=', $post->id)->latest()->take(3)->get();
         return view('posts.show', compact('post', 'otherPosts'));
     }
+
+    public function index()
+    {
+        $posts = Post::latest()->get();
+        return view('posts.index', compact('posts'));
+    }
 }
 
