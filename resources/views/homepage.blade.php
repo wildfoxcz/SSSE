@@ -94,7 +94,7 @@
                                 <div class="blurb-body">
                                     <div class="blurb-counter-value h2"><span data-counter="">550</span>
                                     </div>
-                                    <div class="blurb-title h4">Studentnů</div>
+                                    <div class="blurb-title h4">studentů</div>
                                 </div>
                             </article>
                         </div>
@@ -107,7 +107,7 @@
                                 <div class="blurb-body">
                                     <div class="blurb-counter-value h2"><span data-counter="">79</span><span class="counter-postfix">%</span>
                                     </div>
-                                    <div class="blurb-title h4">Úspěšnost u zkoušek</div>
+                                    <div class="blurb-title h4">úspěšnost u zkoušek</div>
                                 </div>
                             </article>
                         </div>
@@ -120,7 +120,7 @@
                                 <div class="blurb-body">
                                     <div class="blurb-counter-value h2"><span data-counter="">20</span>
                                     </div>
-                                    <div class="blurb-title h4">Studentů na třídu</div>
+                                    <div class="blurb-title h4">studentů na třídu</div>
                                 </div>
                             </article>
                         </div>
@@ -131,9 +131,9 @@
                                     <div class="icon blurb-icon custom-font-university"></div>
                                 </div>
                                 <div class="blurb-body">
-                                    <div class="blurb-counter-value h2"><span data-counter="">10</span>
+                                    <div class="blurb-counter-value h2"><span data-counter="">9</span>
                                     </div>
-                                    <div class="blurb-title h4">Campuses</div>
+                                    <div class="blurb-title h4">oborů</div>
                                 </div>
                             </article>
                         </div>
