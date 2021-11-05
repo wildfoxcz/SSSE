@@ -12,7 +12,7 @@
                     <div class="row justify-content-center">
                         <div class="col-md-9 col-lg-7">
                             <h1>{{ $post->title }}</h1>
-                            <p class="big">{!! $post->short_desc !!}</p><a class="btn btn-primary" href="#">Číst více</a>
+                            <p class="big">{!! $post->short_desc !!}</p><a class="btn btn-primary" href="{{ url('aktuality') }}/{{ $post->slug }}">Číst více</a>
                         </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
     <div class="container">
         <div class="text-block text-block-1" data-animate='{"class":"fadeIn"}'>
             <h2>Vyber si obor pro tebe</h2>
-            <p class="big">Our featured courses are selected through a rigorous process and uniquely created for each semester. They cover a lot of topics and are available both online and offline.</p>
+            <p class="big">Můžeš být elektrikářem až po ajťáka, nebo nástrojařem až po programátora CNC. Vyber si, kam tě srdce táhne.</p>
         </div>
         <div class="owl-carousel owl-content-1" data-owl="{&quot;dots&quot;:true}" data-loop="false" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4">
             @foreach($fields as $field)
@@ -82,8 +82,8 @@
         <div class="row">
             <div class="col-lg-7">
                 <div class="pe-xxl-5">
-                    <h2>Co ti nabídneme?</h2>
-                    <p class="big">Teachzy offers quality education helping you build your future career. Here just some of the facts that show why students choose us.</p>
+                    <h2>Naše škola v číslech</h2>
+
                     <div class="row row-30 row-lg-55">
                         <div class="col-6 col-sm-3 col-md-6">
                             <!-- Blurb side-->
@@ -92,9 +92,9 @@
                                     <div class="icon blurb-icon custom-font-graduated"></div>
                                 </div>
                                 <div class="blurb-body">
-                                    <div class="blurb-counter-value h2"><span data-counter="">97</span><span class="counter-postfix">%</span>
+                                    <div class="blurb-counter-value h2"><span data-counter="">550</span>
                                     </div>
-                                    <div class="blurb-title h4">Graduates</div>
+                                    <div class="blurb-title h4">Studentnů</div>
                                 </div>
                             </article>
                         </div>
@@ -105,9 +105,9 @@
                                     <div class="icon blurb-icon custom-font-male-teacher"></div>
                                 </div>
                                 <div class="blurb-body">
-                                    <div class="blurb-counter-value h2"><span data-counter="">50</span><span class="counter-postfix">+</span>
+                                    <div class="blurb-counter-value h2"><span data-counter="">79</span><span class="counter-postfix">%</span>
                                     </div>
-                                    <div class="blurb-title h4">Certified tutors</div>
+                                    <div class="blurb-title h4">Úspěšnost u zkoušek</div>
                                 </div>
                             </article>
                         </div>
@@ -118,9 +118,9 @@
                                     <div class="icon blurb-icon custom-font-student-at-desk"></div>
                                 </div>
                                 <div class="blurb-body">
-                                    <div class="blurb-counter-value h2"><span data-counter="">6500</span>
+                                    <div class="blurb-counter-value h2"><span data-counter="">20</span>
                                     </div>
-                                    <div class="blurb-title h4">Students</div>
+                                    <div class="blurb-title h4">Studentů na třídu</div>
                                 </div>
                             </article>
                         </div>
@@ -148,7 +148,6 @@
     <div class="container">
         <div class="text-block text-block-1" data-animate='{"class":"fadeIn"}'>
             <h2>Co o nás říkají?</h2>
-            <p class="big">Want to know more about our university? The feedback submitted by our students is an effective way to show how beneficial the studying at Teachzy university can be.</p>
         </div>
         <div class="slick-person-container">
             <div class="slick-slider slick-person-img slider-nav" data-slick='{"slidesToShow":3,"arrows":false,"asNavFor":".slider-for","focusOnSelect":true,"centerMode":true,"centerPadding":"0px"}'>
