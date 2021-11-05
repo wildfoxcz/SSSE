@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-    <title>Home</title>
+    <title>SŠSE Brno</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +23,7 @@
                 <div class="navbar-cell">
                     <div class="navbar-panel">
                         <button class="navbar-switch novi-icon custom-font-menu" data-multi-switch='{"targets":".rd-navbar","scope":".rd-navbar","isolate":"[data-multi-switch]"}'></button>
-                        <div class="navbar-logo"><a class="navbar-logo-link" href="index.html"><img class="navbar-logo-inverse" src="images/logo-inverse-396x100.png" alt="Teachzy" width="198" height="50"/></a></div>
+                        <div class="navbar-logo"><a class="navbar-logo-link" href="{{ url('/') }}"><img class="navbar-logo-inverse" src="images/logo-inverse-396x100.png" alt="Teachzy" width="198" height="50"/></a></div>
                     </div>
                 </div>
                 <div class="navbar-spacer"></div>
@@ -32,25 +32,33 @@
                         <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="tutors.html">UCHAZEČI</a>
                             <ul class="navbar-navigation-dropdown rd-navbar-dropdown">
                                 <li class="navbar-navigation-back">
-                                    <button class="navbar-navigation-back-btn">Back</button>
+                                    <button class="navbar-navigation-back-btn">Zpět</button>
                                 </li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Team member</a>
-                                </li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Proč u nás studovat?</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Naše obory</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Příjmací řízení</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Ubytování a stravování</a></li>
                             </ul>
                         </li>
                         <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="tutors.html">STUDENTI</a>
                             <ul class="navbar-navigation-dropdown rd-navbar-dropdown">
                                 <li class="navbar-navigation-back">
-                                    <button class="navbar-navigation-back-btn">Back</button>
+                                    <button class="navbar-navigation-back-btn">Zpět</button>
                                 </li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Team member</a>
-                                </li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Edookit</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Studijní oddělení</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Konzultační hodiny</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Organizace školního roku</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Studijní materiály</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Ubytování a stravování</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Poradenské pracoviště</a></li>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Školní projekty</a></li>
                             </ul>
                         </li>
                         <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="tutors.html">O ŠKOLE</a>
                             <ul class="navbar-navigation-dropdown rd-navbar-dropdown">
                                 <li class="navbar-navigation-back">
-                                    <button class="navbar-navigation-back-btn">Back</button>
+                                    <button class="navbar-navigation-back-btn">Zpět</button>
                                 </li>
                                 <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Historie a současnost</a>
                                 <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Školská rada</a>
@@ -59,37 +67,33 @@
                                 <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Vzdělávaní dospělých</a>
                                 <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Ubytovna - hotel</a>
                                 <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Projekty</a>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Projekty</a>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="team-member.html">Pronájmy</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="{{ route('posts.index') }}">AKTUALITY</a>
+                        <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="{{ route('posts.index') }}">AKTUÁLNĚ</a>
                             <ul class="navbar-navigation-dropdown rd-navbar-dropdown">
                                 <li class="navbar-navigation-back">
-                                    <button class="navbar-navigation-back-btn">Back</button>
+                                    <button class="navbar-navigation-back-btn">Zpět</button>
                                 </li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="single-post.html">Single post</a>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="single-post.html">Novinky</a>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="single-post.html">Úřední deska</a>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="single-post.html">Volná místa</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="#">MATURITY A ZKOUŠKY</a>
                             <ul class="navbar-navigation-dropdown rd-navbar-dropdown">
                                 <li class="navbar-navigation-back">
-                                    <button class="navbar-navigation-back-btn">Back</button>
+                                    <button class="navbar-navigation-back-btn">Zpět</button>
                                 </li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="gallery.html">Gallery</a>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="gallery.html">Maturnitní zkoušky</a>
                                 </li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="404.html">404</a>
-                                </li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="coming-soon.html">Coming soon</a>
-                                </li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="privacy-policy.html">Privacy policy</a>
-                                </li>
-                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="search-results.html">Search results</a>
+                                <li class="navbar-navigation-dropdown-item"><a class="navbar-navigation-dropdown-link" href="404.html">Závěrečné zkoušky</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="contact-us.html">KONTAKT</a>
+                        <li class="navbar-navigation-root-item"><a class="navbar-navigation-root-link" href="#">KONTAKT</a>
                         </li>
                     </ul>
                 </div>
@@ -97,8 +101,8 @@
             </div>
         </nav>
     </header>
-    @yield('content')
-    <!-- Footer default-->
+@yield('content')
+<!-- Footer default-->
     <footer class="section footer">
         <div class="footer-top bg-300">
             <div class="container">
@@ -107,37 +111,36 @@
                         <h5 class="footer-title">Kontakt</h5>
                         <ul class="list list-icons">
                             <li class="list-item">
-                                <div class="list-icon custom-font-pin"></div><a class="link link-inherit" href="#">Brooklyn, NY 10036, 16-2 United States</a>
+                                <div class="list-icon custom-font-pin"></div><a class="link link-inherit" href="#">Trnkova 2482/113, 628 00 Brno-Líšeň</a>
                             </li>
                             <li class="list-item">
-                                <div class="list-icon custom-font-email"></div><a class="link link-inherit" href="mailto:#">info@demolink.org</a>
+                                <div class="list-icon custom-font-email"></div><a class="link link-inherit" href="mailto:#">sekretariat@sssebrno.cz</a>
                             </li>
                             <li class="list-item">
-                                <div class="list-icon custom-font-phone"></div><span><span>Call Us: </span><a class="link link-inherit" href="tel:#">1-800-123-1234</a></span>
+                                <div class="list-icon custom-font-phone"></div><span><a class="link link-inherit" href="tel:#">+420 544 422 811</a></span>
                             </li>
                         </ul>
                     </div>
                     <div class="col-6 col-md-3">
                         <h5 class="footer-title">Pro uchazeče</h5>
                         <ul class="list list-sm">
-                            <li class="list-item"><a class="link link-inherit" href="#">Facebook</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">Pinterest</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">LinkedIn</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">Instagram</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">Twitter</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">YouTube</a></li>
+                            <li class="list-item"><a class="link link-inherit" href="#">Proč u nás studovat?</a></li>
+                            <li class="list-item"><a class="link link-inherit" href="#">Naše obory</a></li>
+                            <li class="list-item"><a class="link link-inherit" href="#">Přijmací řízení</a></li>
+                            <li class="list-item"><a class="link link-inherit" href="#">Ubytování a stravování</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md-3">
-                        <h5 class="footer-title">Pro studenty</h5>
+                        <h5 class="footer-title">Studenti</h5>
                         <ul class="list list-sm">
-                            <li class="list-item"><a class="link link-inherit" href="#">Our Mission</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">Graduate Admission</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">Our Vision</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">Our Values</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">About Us</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="academics.html">Academics</a></li>
-                            <li class="list-item"><a class="link link-inherit" href="#">Degree Programs</a></li>
+                            <li class="list-item"><a class="link link-inherit" href="#">Edookit</a></li>
+                            <li class="list-item"><a class="link link-inherit" href="#">Studijní oddělení</a></li>
+                            <li class="list-item"><a class="link link-inherit" href="#">Konzultační hodiny</a></li>
+                            <li class="list-item"><a class="link link-inherit" href="#">Organizace školního roku</a></li>
+                            <li class="list-item"><a class="link link-inherit" href="#">Studijní materiály</a></li>
+                            <li class="list-item"><a class="link link-inherit" href="#">Ubytování a stravování</a></li>
+                            <li class="list-item"><a class="link link-inherit" href="#">Poradenské pracoviště</a></li>
+                            <li class="list-item"><a class="link link-inherit" href="#">Školní projekty</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md-3">
@@ -159,7 +162,7 @@
         <div class="footer-bottom bg-700 context-dark text-center">
             <div class="container">
                 <!-- Copyright-->
-                <p class="rights"><span>&copy; 2021&nbsp;</span><span>Teachzy</span><span>. All rights reserved.&nbsp;</span><a class="link link-inherit" href="privacy-policy.html">Privacy Policy</a></p>
+                <p class="rights"><span>&copy; 2021&nbsp;</span><span>SŠSE Brno</span><span> - Všechna práva vyhrazená.&nbsp;</span></p>
             </div>
         </div>
     </footer>
