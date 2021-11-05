@@ -23,7 +23,7 @@
                 <div class="navbar-cell">
                     <div class="navbar-panel">
                         <button class="navbar-switch novi-icon custom-font-menu" data-multi-switch='{"targets":".rd-navbar","scope":".rd-navbar","isolate":"[data-multi-switch]"}'></button>
-                        <div class="navbar-logo"><a class="navbar-logo-link" href="{{ url('/') }}"><img class="navbar-logo-inverse" src="images/logo-inverse-396x100.png" alt="Teachzy" width="198" height="50"/></a></div>
+                        <div class="navbar-logo"><a class="navbar-logo-link" href="{{ url('/') }}"><img class="navbar-logo-inverse" src="{{ url('images/logo-inverse-396x100.png') }}" alt="Teachzy" width="198" height="50"/></a></div>
                     </div>
                 </div>
                 <div class="navbar-spacer"></div>
