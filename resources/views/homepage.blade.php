@@ -58,8 +58,8 @@
 <section class="section-md bg-300 text-center">
     <div class="container">
         <div class="text-block text-block-1" data-animate='{"class":"fadeIn"}'>
-            <h2>Vyber si obor pro tebe</h2>
-            <p class="big">Můžeš být elektrikářem až po ajťáka, nebo nástrojařem až po programátora CNC. Vyber si, kam tě srdce táhne.</p>
+            <h2>Vyber si svůj obor</h2>
+            <p class="big">Můžeš být elektrikářem až po ajťáka, nebo nástrojařem až po programátora CNC. <br>Vyber si, kam tě srdce táhne.</p>
         </div>
         <div class="owl-carousel owl-content-1" data-owl="{&quot;dots&quot;:true}" data-loop="false" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4">
             @foreach($fields as $field)
@@ -77,7 +77,7 @@
 </section>
 <!-- Counters-->
 <section class="section-lg bg-primary bg-image-wrap context-dark text-center text-md-start">
-    <div class="bg-image-wrap-item bg-image" style="background-image:url(images/image-05-875x705.jpg);"></div>
+    <div class="bg-image-wrap-item bg-image" style="background-image:url(images/skola-00-875x705.jpg);"></div>
     <div class="container">
         <div class="row">
             <div class="col-lg-7">
