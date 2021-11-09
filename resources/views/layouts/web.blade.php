@@ -17,8 +17,8 @@
 <body>
 <div class="page">
     <!--RD Navbar-->
-    <div style="color: #ffffff; padding: 10px 10px 10px 400px; background-color: #051d64">rozvrh | jídelníček | edookit | instagram | facebook</div>
     <header class="section rd-navbar{{($hiddenNav ?? false) ? '-absolute' : ''}}-wrap" data-preset='{"title":"Navbar Default","category":"header","reload":true,"id":"navbar-default"}'>
+        <div style="color: #ffffff; padding: 10px 10px 10px 400px; background-color: #051d64">rozvrh | jídelníček | edookit | instagram | facebook</div>
         <nav class="rd-navbar" data-rd-navbar='{"responsive":{"1200":{"stickUpOffset":"50px"}}}'>
             <div class="navbar-container">
                 <div class="navbar-cell">
