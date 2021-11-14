@@ -80,9 +80,44 @@ $actionText = ($mode == 'edit' ? 'Upravit' : 'Vytvořit').' obor';
 
                         </div>
                         <!-- /.card-body -->
+
                     </div>
+                    <!-- /.card -->
 
 
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Partneři</h3>
+
+                            <div class="card-tools">
+                                <div class="card-tools">
+                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            @foreach($partners as $partner)
+                                <div class="form-check">
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="partners[{{$partner->id}}]"
+                                        name="partners[{{$partner->id}}]"
+                                        {{ $field->partners->contains($partner->id) ? 'checked' : '' }}
+                                    >
+                                    <label class="form-check-label" for="partners[{{$partner->id}}]">
+                                        {{$partner->name}}
+                                    </label>
+                                </div>
+                            @endforeach
+                        </div>
+                        <!-- /.card-body -->
+
+                    </div>
                     <!-- /.card -->
                 </div>
 
@@ -191,7 +226,7 @@ $actionText = ($mode == 'edit' ? 'Upravit' : 'Vytvořit').' obor';
                             </div>
 
                         </div>
-                </div>
+                    </div>
                     <!-- /.card -->
 
                 </div>

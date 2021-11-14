@@ -27,4 +27,9 @@ class Field extends Model
     {
         return 'slug';
     }
+
+    public function partners()
+    {
+        return $this->belongsToMany(Partner::class);
+    }
 }

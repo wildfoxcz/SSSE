@@ -56,5 +56,13 @@ Route::prefix('admin/')->name('admin.')->middleware('role:admin')->group(functio
         'edit' => 'fields.edit',
         'update' => 'fields.update',
     ]);
+
+    Route::resource('/partners', 'Admin\\PartnerController')->names([
+        'index' => 'partners.index',
+        'create' => 'partners.create',
+        'store' => 'partners.store',
+        'edit' => 'partners.edit',
+        'update' => 'partners.update',
+    ]);
 });
 

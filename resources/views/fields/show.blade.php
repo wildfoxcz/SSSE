@@ -83,31 +83,16 @@
             <p class="big">Spolupracujeme s těmi nejlepšími</p>
         </div>
         <div class="owl-carousel owl-content-1" data-owl="{&quot;dots&quot;:true}" data-loop="false" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4">
+            @foreach($field->partners as $partner)
             <!-- Price box-->
             <div class="price-box">
-                <div class="price-box-media"><img class="price-box-img" src="images/image-01-270x220.jpg" alt="" width="270" height="220"/>
+                <div class="price-box-media">
+                    <a href="{{ $partner->url }}" title="{{ $partner->name }}">
+                        <img class="price-box-img" src="{{ url('images/partners/'.$partner->image) }}" alt="" width="270" height="220"/>
+                    </a>
                 </div>
             </div>
-            <!-- Price box-->
-            <div class="price-box">
-                <div class="price-box-media"><img class="price-box-img" src="images/image-02-270x220.jpg" alt="" width="270" height="220"/>
-                </div>
-            </div>
-            <!-- Price box-->
-            <div class="price-box">
-                <div class="price-box-media"><img class="price-box-img" src="images/image-03-270x220.jpg" alt="" width="270" height="220"/>
-                </div>
-            </div>
-            <!-- Price box-->
-            <div class="price-box">
-                <div class="price-box-media"><img class="price-box-img" src="images/image-04-270x220.jpg" alt="" width="270" height="220"/>
-                </div>
-            </div>
-            <!-- Price box-->
-            <div class="price-box">
-                <div class="price-box-media"><img class="price-box-img" src="images/image-18-270x220.jpg" alt="" width="270" height="220"/>
-                </div>
-            </div>
+            @endforeach
         </div>
     </section>
 @endsection
