@@ -43,9 +43,9 @@
                     </p>
                 </div>
                 <div align="center" class="col-md-6 bg-primary context-dark spacing-box"  style="padding-top: 230px;">
-                    <a class="btn btn-outline" href="{{ url('images/fields/'.$field->join_url) }}">Přihláška ke studiu (PDF)</a><br>
-                    <a class="btn btn-outline" href="{{ url('images/fields/'.$field->about_url) }}">Informace o příjmacím řízení</a><br>
-                    <a class="btn btn-outline" href="{{ url('images/fields/'.$field->vsp) }}">Školní vzdělávací Program</a>
+                    <a class="btn btn-outline" href="{{ url('files/fields/'.$field->join_url) }}">Přihláška ke studiu (PDF)</a><br>
+                    <a class="btn btn-outline" href="{{ url('files/fields/'.$field->about_url) }}">Informace o příjmacím řízení</a><br>
+                    <a class="btn btn-outline" href="{{ url('files/fields/'.$field->vsp) }}">Školní vzdělávací Program</a>
                 </div>
                 <div class="col-md-6 bg-secondary context-dark spacing-box" >
                     <h2>Co budu umět?</h2>
@@ -69,7 +69,7 @@
                 <div class="col-md-10 col-xxl-9">
                     <h2>Učební plán</h2>
                     <p class="big">
-                        Zde přijde tabulka
+                        {!! $field->learn_plan !!}
                     </p>
                 </div>
             </div>
@@ -83,31 +83,16 @@
             <p class="big">Spolupracujeme s těmi nejlepšími</p>
         </div>
         <div class="owl-carousel owl-content-1" data-owl="{&quot;dots&quot;:true}" data-loop="false" data-items="1" data-sm-items="2" data-md-items="3" data-lg-items="4">
+            @foreach($field->partners as $partner)
             <!-- Price box-->
             <div class="price-box">
-                <div class="price-box-media"><img class="price-box-img" src="images/image-01-270x220.jpg" alt="" width="270" height="220"/>
+                <div class="price-box-media">
+                    <a href="{{ $partner->url }}" title="{{ $partner->name }}">
+                        <img class="price-box-img" src="{{ url('images/partners/'.$partner->image) }}" alt="" width="270" height="220"/>
+                    </a>
                 </div>
             </div>
-            <!-- Price box-->
-            <div class="price-box">
-                <div class="price-box-media"><img class="price-box-img" src="images/image-02-270x220.jpg" alt="" width="270" height="220"/>
-                </div>
-            </div>
-            <!-- Price box-->
-            <div class="price-box">
-                <div class="price-box-media"><img class="price-box-img" src="images/image-03-270x220.jpg" alt="" width="270" height="220"/>
-                </div>
-            </div>
-            <!-- Price box-->
-            <div class="price-box">
-                <div class="price-box-media"><img class="price-box-img" src="images/image-04-270x220.jpg" alt="" width="270" height="220"/>
-                </div>
-            </div>
-            <!-- Price box-->
-            <div class="price-box">
-                <div class="price-box-media"><img class="price-box-img" src="images/image-18-270x220.jpg" alt="" width="270" height="220"/>
-                </div>
-            </div>
+            @endforeach
         </div>
     </section>
 @endsection

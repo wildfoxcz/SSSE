@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Partner;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -19,7 +20,8 @@ class FieldController extends Controller
 
     public function edit(Field $field)
     {
-        return view('admin.fields.edit_or_create', compact('field'));
+        $partners = Partner::all();
+        return view('admin.fields.edit_or_create', compact('field', 'partners'));
     }
 
 
@@ -32,7 +34,8 @@ class FieldController extends Controller
 
     public function create()
     {
-        return view('admin.fields.edit_or_create');
+        $partners = Partner::all();
+        return view('admin.fields.edit_or_create', compact('partners'));
     }
 
     public function store()
@@ -61,15 +64,17 @@ class FieldController extends Controller
             'image_1' => '',
             'image_2' => '',
             'image_3' => '',
-            'join_url' => 'required|string',
-            'about_url' => 'required|string',
+            // @todo 'join_url' => 'required|string',
+            // @todo 'about_url' => 'required|string',
             'basic_info' => 'required|string',
-            'vsp' => 'required|string',
+            // @todo 'vsp' => 'required|string',
             // @todo 'image' => '',
-
+        ];
+        $extraRules = [
+            //'partners' => 'array|exists:partners,id' // @todo
         ];
 
-        $this->validate(request(), $rules);
+        $this->validate(request(), $rules + $extraRules);
 
         if(request()->hasFile('image_1')){
             $image_tmp1 = request()->file('image_1');
@@ -113,12 +118,29 @@ class FieldController extends Controller
             }
         }
 
+        foreach(["join_url", "about_url", "vsp"] as $key)
+        {
+            if(request()->hasFile($key)){
+                $file = request()->file($key);
+                if($file->isValid()){
+                    // Get Image Extension
+                    $name=$file->getClientOriginalName();
+                    $file->move('files/fields',$name);
+                    $field->$key=$name;
+                }
+            }
+        }
+
         $properties = array_keys($rules);
         foreach(array_intersect_key(request()->input(), array_flip($properties)) as $property => $value)
         {
             $field->$property = $value;
         }
+
         $field->save();
+
+        $field->partners()->sync(array_keys(request('partners')));
+
         return $field;
     }
 

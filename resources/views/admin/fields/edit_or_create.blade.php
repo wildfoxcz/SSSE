@@ -80,9 +80,44 @@ $actionText = ($mode == 'edit' ? 'Upravit' : 'Vytvořit').' obor';
 
                         </div>
                         <!-- /.card-body -->
+
                     </div>
+                    <!-- /.card -->
 
 
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Partneři</h3>
+
+                            <div class="card-tools">
+                                <div class="card-tools">
+                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            @foreach($partners as $partner)
+                                <div class="form-check">
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="partners[{{$partner->id}}]"
+                                        name="partners[{{$partner->id}}]"
+                                        {{ $field->partners->contains($partner->id) ? 'checked' : '' }}
+                                    >
+                                    <label class="form-check-label" for="partners[{{$partner->id}}]">
+                                        {{$partner->name}}
+                                    </label>
+                                </div>
+                            @endforeach
+                        </div>
+                        <!-- /.card-body -->
+
+                    </div>
                     <!-- /.card -->
                 </div>
 
@@ -175,23 +210,23 @@ $actionText = ($mode == 'edit' ? 'Upravit' : 'Vytvořit').' obor';
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <label for="inputName">Odkaz na přihlášku ke studiu</label>
-                                <input type="text" id="inputName" class="form-control" name="join_url" value="{{ old('join_url', $mode == 'edit' ? $field->join_url : null) }}">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="inputName">Informace o příjmacím řízení</label>
-                                <input type="text" id="inputName" class="form-control" name="about_url" value="{{ old('about_url', $mode == 'edit' ? $field->about_url : null) }}">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="inputName">VŠP</label>
-                                <input type="text" id="vsp" class="form-control" name="vsp" value="{{ old('vsp', $mode == 'edit' ? $field->vsp : null) }}">
-                            </div>
+                            @foreach(["join_url" => "Odkaz na přihlášku ke studiu",
+                                      "about_url" => "Informace o příjmacím řízení",
+                                      "vsp" => "VŠP"
+                                    ] as $key => $label)
+                                <div class="form-group">
+                                    <label for="{{$key}}">{{$label}}</label>
+                                    <div class="input-group">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="{{$key}}" name="{{$key}}">
+                                            <label class="custom-file-label" for="{{$key}}">vyberte soubor</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
 
                         </div>
-                </div>
+                    </div>
                     <!-- /.card -->
 
                 </div>
