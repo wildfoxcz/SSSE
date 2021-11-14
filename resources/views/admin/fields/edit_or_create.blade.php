@@ -210,20 +210,20 @@ $actionText = ($mode == 'edit' ? 'Upravit' : 'Vytvořit').' obor';
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <label for="inputName">Odkaz na přihlášku ke studiu</label>
-                                <input type="text" id="inputName" class="form-control" name="join_url" value="{{ old('join_url', $mode == 'edit' ? $field->join_url : null) }}">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="inputName">Informace o příjmacím řízení</label>
-                                <input type="text" id="inputName" class="form-control" name="about_url" value="{{ old('about_url', $mode == 'edit' ? $field->about_url : null) }}">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="inputName">VŠP</label>
-                                <input type="text" id="vsp" class="form-control" name="vsp" value="{{ old('vsp', $mode == 'edit' ? $field->vsp : null) }}">
-                            </div>
+                            @foreach(["join_url" => "Odkaz na přihlášku ke studiu",
+                                      "about_url" => "Informace o příjmacím řízení",
+                                      "vsp" => "VŠP"
+                                    ] as $key => $label)
+                                <div class="form-group">
+                                    <label for="{{$key}}">{{$label}}</label>
+                                    <div class="input-group">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="{{$key}}" name="{{$key}}">
+                                            <label class="custom-file-label" for="{{$key}}">vyberte soubor</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
 
                         </div>
                     </div>

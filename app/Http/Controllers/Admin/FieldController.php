@@ -64,10 +64,10 @@ class FieldController extends Controller
             'image_1' => '',
             'image_2' => '',
             'image_3' => '',
-            'join_url' => 'required|string',
-            'about_url' => 'required|string',
+            // @todo 'join_url' => 'required|string',
+            // @todo 'about_url' => 'required|string',
             'basic_info' => 'required|string',
-            'vsp' => 'required|string',
+            // @todo 'vsp' => 'required|string',
             // @todo 'image' => '',
         ];
         $extraRules = [
@@ -115,6 +115,19 @@ class FieldController extends Controller
                 // Upload the image
                 Image::make($image_tmp3)->save($imagePath3);
                 $field->image_3 = $imageName3;
+            }
+        }
+
+        foreach(["join_url", "about_url", "vsp"] as $key)
+        {
+            if(request()->hasFile($key)){
+                $file = request()->file($key);
+                if($file->isValid()){
+                    // Get Image Extension
+                    $name=$file->getClientOriginalName();
+                    $file->move('files/fields',$name);
+                    $field->$key=$name;
+                }
             }
         }
 
