@@ -10,11 +10,11 @@
                 {!! $field->description !!}
             </div>
             <div class="row g-0">
-                <div class="col-4"><img src="{{ $field->image_1 }}" alt="" width="390" height="390"/>
+                <div class="col-4"><img src="{{ url('images/fields') }}/{{ $field->image_1 }}" alt="" width="390" height="390"/>
                 </div>
-                <div class="col-4"><img src="{{ $field->image_2 }}" alt="" width="390" height="390"/>
+                <div class="col-4"><img src="{{ url('images/fields') }}/{{ $field->image_2 }}" alt="" width="390" height="390"/>
                 </div>
-                <div class="col-4"><img src="{{ $field->image_3 }}" alt="" width="390" height="390"/>
+                <div class="col-4"><img src="{{ url('images/fields') }}/{{ $field->image_3 }}" alt="" width="390" height="390"/>
                 </div>
             </div>
         </div>

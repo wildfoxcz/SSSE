@@ -46,6 +46,9 @@ Route::prefix('admin/')->name('admin.')->middleware('role:admin')->group(functio
         'update' => 'pages.update',
     ]);
 
+    Route::get('ckeditor', 'Admin\\CkeditorController@index');
+    Route::post('ckeditor/upload', 'Admin\\CkeditorController@upload')->name('ckeditor.upload');
+
     Route::resource('/fields', 'Admin\\FieldController')->names([
         'index' => 'fields.index',
         'create' => 'fields.create',

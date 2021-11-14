@@ -203,87 +203,19 @@
         <div class="row row-30 row-lg-60">
             <div class="col-xs-6 col-lg-4">
                 <!-- Person side-->
-                <div class="person person-side" data-animate='{"class":"fadeInUp"}'>
-                    <div class="person-media"><img class="person-img" src="images/person-01-135x135.jpg" alt="" width="135" height="135"/>
-                    </div>
-                    <div class="person-body">
-                        <div class="person-title h6"><a href="team-member.html">Leslie Alexander</a></div>
-                        <div class="person-meta">Tutor</div>
-                        <div class="person-text">Leslie joined our team in 2010 as a marketing tutor.</div>
-                        <div class="person-social social"><a class="icon social-icon custom-font-facebook" href="#"></a><a class="icon social-icon custom-font-twitter" href="#"></a><a class="icon social-icon custom-font-linkedin" href="#"></a>
-                        </div>
-                    </div>
-                </div>
+                <h6>Sledujte nás na Instagramu</h6><br>
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                <div class="elfsight-app-a143b35e-3297-485f-a5fb-9e33506bcc52"></div>
             </div>
             <div class="col-xs-6 col-lg-4">
                 <!-- Person side-->
-                <div class="person person-side" data-animate='{"class":"fadeInUp","delay":".15s"}'>
-                    <div class="person-media"><img class="person-img" src="images/person-02-135x135.jpg" alt="" width="135" height="135"/>
-                    </div>
-                    <div class="person-body">
-                        <div class="person-title h6"><a href="team-member.html">Cameron Williamson</a></div>
-                        <div class="person-meta">Course assistant</div>
-                        <div class="person-text">Cameron helps Teachzy team with online programs.</div>
-                        <div class="person-social social"><a class="icon social-icon custom-font-facebook" href="#"></a><a class="icon social-icon custom-font-twitter" href="#"></a><a class="icon social-icon custom-font-linkedin" href="#"></a>
-                        </div>
-                    </div>
-                </div>
+                <h6>Sledujte nás na Facebooku</h6><br>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsssebrno&tabs=timeline&width=370&height=390&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=349918385790465" width="350" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </div>
             <div class="col-xs-6 col-lg-4">
                 <!-- Person side-->
-                <div class="person person-side" data-animate='{"class":"fadeInUp","delay":".3s"}'>
-                    <div class="person-media"><img class="person-img" src="images/person-03-135x135.jpg" alt="" width="135" height="135"/>
-                    </div>
-                    <div class="person-body">
-                        <div class="person-title h6"><a href="team-member.html">Theresa Webb</a></div>
-                        <div class="person-meta">Lead tutor</div>
-                        <div class="person-text">Theresa is one of our best foreign language tutors.</div>
-                        <div class="person-social social"><a class="icon social-icon custom-font-facebook" href="#"></a><a class="icon social-icon custom-font-twitter" href="#"></a><a class="icon social-icon custom-font-linkedin" href="#"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-lg-4">
-                <!-- Person side-->
-                <div class="person person-side" data-animate='{"class":"fadeInUp"}'>
-                    <div class="person-media"><img class="person-img" src="images/person-04-135x135.jpg" alt="" width="135" height="135"/>
-                    </div>
-                    <div class="person-body">
-                        <div class="person-title h6"><a href="team-member.html">Jacob Jones</a></div>
-                        <div class="person-meta">Program coordinator</div>
-                        <div class="person-text">Jacob coordinates most of our programs &amp; courses.</div>
-                        <div class="person-social social"><a class="icon social-icon custom-font-facebook" href="#"></a><a class="icon social-icon custom-font-twitter" href="#"></a><a class="icon social-icon custom-font-linkedin" href="#"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-lg-4">
-                <!-- Person side-->
-                <div class="person person-side" data-animate='{"class":"fadeInUp","delay":".15s"}'>
-                    <div class="person-media"><img class="person-img" src="images/person-05-135x135.jpg" alt="" width="135" height="135"/>
-                    </div>
-                    <div class="person-body">
-                        <div class="person-title h6"><a href="team-member.html">Brooklyn Simmons</a></div>
-                        <div class="person-meta">Professor</div>
-                        <div class="person-text">Brooklyn is our leading management tutor.</div>
-                        <div class="person-social social"><a class="icon social-icon custom-font-facebook" href="#"></a><a class="icon social-icon custom-font-twitter" href="#"></a><a class="icon social-icon custom-font-linkedin" href="#"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6 col-lg-4">
-                <!-- Person side-->
-                <div class="person person-side" data-animate='{"class":"fadeInUp","delay":".3s"}'>
-                    <div class="person-media"><img class="person-img" src="images/person-06-135x135.jpg" alt="" width="135" height="135"/>
-                    </div>
-                    <div class="person-body">
-                        <div class="person-title h6"><a href="team-member.html">Wade Warren</a></div>
-                        <div class="person-meta">Tutor</div>
-                        <div class="person-text">Wade is an author of Web Tehcnology programs.</div>
-                        <div class="person-social social"><a class="icon social-icon custom-font-facebook" href="#"></a><a class="icon social-icon custom-font-twitter" href="#"></a><a class="icon social-icon custom-font-linkedin" href="#"></a>
-                        </div>
-                    </div>
-                </div>
+                <h6>Sledujte nás na YouTube</h6><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EYcnUCEqxYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
