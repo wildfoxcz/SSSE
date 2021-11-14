@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Field;
 use App\Post;
+use App\Review;
 use Illuminate\Http\Request;
 
 class HomepageController extends Controller
@@ -11,7 +12,8 @@ class HomepageController extends Controller
     {
         $fields = Field::all();
         $posts = Post::orderBy('created_at', 'ASC')->paginate(5);
-        return view('homepage', compact('posts', 'fields'));
+        $reviews = Review::all();
+        return view('homepage', compact('posts', 'fields', 'reviews'));
     }
 }
 

@@ -1,9 +1,9 @@
 <?php
-if(isset($partner))
+if(isset($review))
     $mode = 'edit';
 else
     $mode = 'create';
-$actionText = ($mode == 'edit' ? 'Upravit' : 'Vytvořit').' partnera';
+$actionText = ($mode == 'edit' ? 'Upravit' : 'Vytvořit').' recenzi';
 ?>
 
 @extends('admin.layout.layout')
@@ -13,10 +13,10 @@ $actionText = ($mode == 'edit' ? 'Upravit' : 'Vytvořit').' partnera';
 @section('content')
     <!-- Default box -->
     @if($mode == 'edit')
-        <form action="{{ route('admin.partners.update', $partner) }}" method="post" enctype="multipart/form-data">
+        <form action="{{ route('admin.reviews.update', $review) }}" method="post" enctype="multipart/form-data">
             @method('patch')
     @else
-        <form action="{{ route('admin.partners.store') }}" method="post" enctype="multipart/form-data">
+        <form action="{{ route('admin.reviews.store') }}" method="post" enctype="multipart/form-data">
     @endif
             @csrf
             <div class="row">
@@ -33,8 +33,8 @@ $actionText = ($mode == 'edit' ? 'Upravit' : 'Vytvořit').' partnera';
                         <div class="card-body">
 
                             <div class="form-group">
-                                <label for="inputName">Název partnera</label>
-                                <input type="text" id="inputName" class="form-control" name="name" value="{{ old('name', $mode == 'edit' ? $partner->name : null) }}">
+                                <label for="inputName">Jméno</label>
+                                <input type="text" id="inputName" class="form-control" name="name" value="{{ old('name', $mode == 'edit' ? $review->name : null) }}">
                             </div>
                             @if ($errors->has("name"))
                                 @foreach ($errors->get("name") as $error)
@@ -45,11 +45,24 @@ $actionText = ($mode == 'edit' ? 'Upravit' : 'Vytvořit').' partnera';
                             @endif
 
                             <div class="form-group">
-                                <label for="inputUrl">URL adresa partnera</label>
-                                <input type="text" id="inputUrl" class="form-control" name="url" value="{{ old('url', $mode == 'edit' ? $partner->url : null) }}">
+                                <label for="inputSubtitle">Podnadpis</label>
+                                <input type="text" id="inputSubtitle" class="form-control" name="subtitle" value="{{ old('subtitle', $mode == 'edit' ? $review->subtitle : null) }}">
                             </div>
-                            @if ($errors->has("url"))
-                                @foreach ($errors->get("url") as $error)
+                            @if ($errors->has("subtitle"))
+                                @foreach ($errors->get("subtitle") as $error)
+                                    <div class="errorMessage">
+                                        <strong>{{$error}}</strong>
+                                    </div>
+                                @endforeach
+                            @endif
+
+                            <div class="form-group">
+                                <label for="inputContent">Obsah</label>
+                                <textarea id="inputContent" class="form-control" name="content"
+                                >{{ old('content', $mode == 'edit' ? $review->content : null) }}</textarea>
+                            </div>
+                            @if ($errors->has("content"))
+                                @foreach ($errors->get("content") as $error)
                                     <div class="errorMessage">
                                         <strong>{{$error}}</strong>
                                     </div>

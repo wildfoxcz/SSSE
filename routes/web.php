@@ -64,5 +64,13 @@ Route::prefix('admin/')->name('admin.')->middleware('role:admin')->group(functio
         'edit' => 'partners.edit',
         'update' => 'partners.update',
     ]);
+
+    Route::resource('/reviews', 'Admin\\ReviewController')->names([
+        'index' => 'reviews.index',
+        'create' => 'reviews.create',
+        'store' => 'reviews.store',
+        'edit' => 'reviews.edit',
+        'update' => 'reviews.update',
+    ]);
 });
 
