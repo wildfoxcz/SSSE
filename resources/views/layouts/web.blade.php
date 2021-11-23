@@ -11,13 +11,30 @@
     <meta property="og:url" content="http://digipunk.netii.net">
     <link rel="icon" href="{{ url('images/favicon.ico') }}" type="image/x-icon">
     <link rel="stylesheet" href="{{ url('components/base/base.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <script src="{{ url('components/base/core.min.js') }}"></script>
     <script src="{{ url('components/base/script.js') }}"></script>
 </head>
 <body>
 <div class="page">
     <!--RD Navbar-->
-    <div style="color: #ffffff; padding: 10px 10px 10px 400px; background-color: #051d64">rozvrh | jídelníček | edookit | instagram | facebook</div>
+    <div class="social-bar__wrap">
+        <div class="social-bar__container">
+            @foreach([
+                'rozvrh' => '#',
+                'jídelníček' => '#',
+                'edookit' => '#',
+                'instagram' => '#',
+                'facebook' => '#'
+            ] as $title => $link)
+                <div class="social-bar__item">
+                    <a class="social-bar__link" href="{{$link}}" title="{{$title}}">
+                        {{$title}}
+                    </a>
+                </div>
+            @endforeach
+        </div>
+    </div>
     <header class="section rd-navbar{{($hiddenNav ?? false) ? '-absolute' : ''}}-wrap" data-preset='{"title":"Navbar Default","category":"header","reload":true,"id":"navbar-default"}'>
         <nav class="rd-navbar" data-rd-navbar='{"responsive":{"1200":{"stickUpOffset":"50px"}}}'>
             <div class="navbar-container">

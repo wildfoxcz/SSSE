@@ -1,0 +1,30 @@
+.social-bar__wrap {
+    background-color: #051d64;
+}
+
+.social-bar__container {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0;
+}
+
+.social-bar__item {
+    padding: 0 10px;
+    border-right: 1px solid #ffffff;
+}
+
+.social-bar__link {
+    color: #ffffff;
+}
+
+.social-bar__item:last-of-type {
+    border-right: none;
+}
+
+.rd-navbar-absolute-wrap {
+    top: 42px!important;
+}
