@@ -19,6 +19,7 @@ Route::get('/obory/{field}', 'FieldController@show')->name('fields.show');
 Route::get('/aktuality', 'PostController@index')->name('posts.index');
 Route::get('/aktuality/{post}', 'PostController@show')->name('posts.show');
 Route::get('/stranky/{page}', 'PageController@show')->name('pages.show');
+Route::get('/galerie', 'GalleryImageController@index')->name('gallery_images.index');
 
 Route::get('ckeditor', 'CkeditorController@index');
 Route::post('ckeditor/upload', 'CkeditorController@upload')->name('ckeditor.upload');
@@ -71,6 +72,14 @@ Route::prefix('admin/')->name('admin.')->middleware('role:admin')->group(functio
         'store' => 'reviews.store',
         'edit' => 'reviews.edit',
         'update' => 'reviews.update',
+    ]);
+
+    Route::resource('/gallery_images', 'Admin\\GalleryImageController')->names([
+        'index' => 'gallery_images.index',
+        'create' => 'gallery_images.create',
+        'store' => 'gallery_images.store',
+        'edit' => 'gallery_images.edit',
+        'update' => 'gallery_images.update',
     ]);
 });
 

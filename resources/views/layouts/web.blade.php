@@ -194,5 +194,31 @@
         <div class="preloader-dot"></div>
     </div>
 </div>
+<script type="text/javascript" src="{{asset('js/accessibility.min.js')}}"></script>
+<script type="text/javascript">
+    window.addEventListener('load', function() {
+        var labels = {
+            resetTitle: 'reset (in my language)',
+            closeTitle: 'close (in my language)',
+            menuTitle: 'title (in my language)',
+            increaseText: 'increase text size (in my language)',
+            decreaseText: 'decrease text size (in my language)',
+            increaseTextSpacing: 'increase text spacing (in my language)',
+            decreaseTextSpacing: 'decrease text spacing (in my language)',
+            invertColors: 'invert colors (in my language)',
+            grayHues: 'gray hues (in my language)',
+            underlineLinks: 'underline links (in my language)',
+            bigCursor: 'big cursor (in my language)',
+            readingGuide: 'reading guide (in my language)',
+            textToSpeech: 'text to speech (in my language)',
+            speechToText: 'speech to text (in my language)'
+        };
+
+        var options = { labels: labels };
+        options.textToSpeechLang = 'cs-CZ';
+        options.speechToTextLang = 'cs-CZ';
+        new Accessibility(options);
+    }, false);
+</script>
 </body>
 </html>
