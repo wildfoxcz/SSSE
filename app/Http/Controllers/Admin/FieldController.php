@@ -139,7 +139,7 @@ class FieldController extends Controller
 
         $field->save();
 
-        $field->partners()->sync(array_keys(request('partners')));
+        $field->partners()->sync(array_keys(request('partners') ?? []));
 
         return $field;
     }
