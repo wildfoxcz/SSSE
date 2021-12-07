@@ -28,3 +28,7 @@
 .rd-navbar-absolute-wrap {
     top: 42px!important;
 }
+
+.navbar__homepage .navbar-navigation-root-link {
+    color: #051d64!important;
+}

@@ -35,7 +35,7 @@
             @endforeach
         </div>
     </div>
-    <header class="section rd-navbar{{($hiddenNav ?? false) ? '-absolute' : ''}}-wrap" data-preset='{"title":"Navbar Default","category":"header","reload":true,"id":"navbar-default"}'>
+    <header class="section rd-navbar{{($hiddenNav ?? false) ? '-absolute' : ''}}-wrap {{$navBarClass ?? ''}}" data-preset='{"title":"Navbar Default","category":"header","reload":true,"id":"navbar-default"}'>
         <nav class="rd-navbar" data-rd-navbar='{"responsive":{"1200":{"stickUpOffset":"50px"}}}'>
             <div class="navbar-container">
                 <div class="navbar-cell">

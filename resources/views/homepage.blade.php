@@ -1,4 +1,4 @@
-@extends('layouts.web', ['hiddenNav' => true])
+@extends('layouts.web', ['navBarClass' => 'navbar__homepage'])
 
 @section('content')
 <!-- Swiper default-->
